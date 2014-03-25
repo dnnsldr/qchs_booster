@@ -1,0 +1,125 @@
+/******************************************************************
+Custom Login Stylesheet
+
+Designed by dnnsldr for simpleunion
+http://dnnsldr.com
+http://simpleunion.com
+
+This stylesheet is loaded (if admin.php is setup in your 
+functions file) on the login page. This way you can style 
+the login page. It won't affect any other page, admin or front-end.
+
+For more info, check out the codex:
+http://codex.wordpress.org/Creating_Admin_Themes
+
+******************************************************************/
+
+
+* {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	-webkit-font-smoothing: antialiased;
+}
+
+:focus {
+	outline: 0!important;
+}
+#login {width: 492px}
+body, body.login {background: #000}
+body.login h1 a {
+	background: url('../images/QCHSBulldogLogo.jpg') center center no-repeat transparent;
+	background-size: 492px 337px;
+	width: 492px;
+	height: 337px;
+	margin: 0 auto 30px;
+	opacity: 1;
+	padding: 0;
+}
+
+body.login h1 a:hover {opacity: 1;}
+
+body.login form#loginform {
+	background: #EBEBEB;
+	border: 4px double #ccc;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-o-border-radius: 8px;
+	-ms-border-radius: 8px;
+	border-radius: 8px;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-o-box-shadow: none;
+	-ms-box-shadow: none;
+	box-shadow: 0 0 10px 0 #D6D6D6 inset;
+}
+
+form#loginform label {color: #777}
+form#loginform label br {display: none;}
+
+form#loginform p:nth-child(3) {margin: 0 0 10px;}
+
+form#loginform p:nth-child(3) br {display: none;}
+
+form#loginform p:nth-child(3) a {text-decoration: underline;}
+
+form#loginform input[type="text"], form#loginform input[type="password"] {
+	font-family: "brandon-grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background: #DDDDDD;
+	opacity: 0.6;
+	vertical-align: baseline;
+	border: 0;
+	border-bottom: 2px solid #ccc;
+	padding: 10px 10px 4px;
+	color: #111!important;
+	font-size: 20px;
+}
+
+form#loginform input[type="text"]:focus, form#loginform input[type="password"]:focus {
+	border-bottom: 2px solid #ccc;
+	opacity: 1;
+}
+
+form#loginform p.forgetmenot label {
+	position: relative;
+	background-image: url('../images/checkbox.png');
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	padding: 2px 0 0 24px;
+	height: 18px;
+	display: inline-block;
+	-webkit-transition: none;
+	-moz-transition: none;
+	-ms-transition: none;
+	transition: none;
+}
+
+form#loginform p.forgetmenot label input[type="checkbox"] {position: absolute; left: 0; width: 16px; height: 16px; display: block; cursor: pointer;}
+
+form#loginform p.submit input[type="submit"] {
+	background: -moz-linear-gradient(center top , #FFFFFF 5%, #DADADA 100%) repeat scroll 0 0 #FFFFFF;
+	border: 0;
+	border-bottom: 2px solid #ccc;
+	font-weight: 400;
+	color: #010101;
+	text-shadow: none;
+	text-transform: uppercase;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	border-radius: 5px;
+	box-shadow: 0 1px 0 0 #9C9C9C, 0 2px 4px rgba(10, 10, 10, 0.4);
+	padding: 4px 12px 0;
+}
+
+form#loginform p.submit input[type="submit"]:hover {
+	color: #111;
+}
+
+p#nav {text-align: center; text-shadow: none!important;}
+
+p#backtoblog {display: none;}
+
+html[data-useragent*="AppleWebKit"] #loginform input {font-weight: 400;}
