@@ -16,6 +16,7 @@ jQuery(document).ready(function($){
 		$(this+':checked').parent('label').css("background-position","0px -20px");
 		$(this).not(':checked').parent('label').css("background-position","0px 0px");
 	});
+	
 
 //thats all folks
 })

@@ -26,13 +26,13 @@ http://codex.wordpress.org/Creating_Admin_Themes
 :focus {
 	outline: 0!important;
 }
-#login {width: 492px}
+#login {width: 355px}
 body, body.login {background: #000}
 body.login h1 a {
-	background: url('../images/QCHSBulldogLogo.jpg') center center no-repeat transparent;
-	background-size: 492px 337px;
-	width: 492px;
-	height: 337px;
+	background: url('../images/bulldog-logo.png') center center no-repeat transparent;
+	background-size: 355px 292px;
+	width: 355px;
+	height: 292px;
 	margin: 0 auto 30px;
 	opacity: 1;
 	padding: 0;
@@ -54,6 +54,8 @@ body.login form#loginform {
 	-ms-box-shadow: none;
 	box-shadow: 0 0 10px 0 #D6D6D6 inset;
 }
+
+.login #nav {text-align: left}
 
 form#loginform label {color: #777}
 form#loginform label br {display: none;}
