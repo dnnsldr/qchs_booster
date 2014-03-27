@@ -1,0 +1,370 @@
+[26-Mar-2014 19:14:40 UTC] PHP Notice:  Undefined index: show_title in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1151
+[26-Mar-2014 19:14:40 UTC] PHP Notice:  Undefined index: show_photos in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1231
+[26-Mar-2014 19:15:08 UTC] PHP Notice:  Undefined index: show_title in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1151
+[26-Mar-2014 19:15:08 UTC] PHP Notice:  Undefined index: show_photos in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1231
+[26-Mar-2014 19:15:08 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php:1151) in /Users/dnnsldr/Sites/qchs_booster/wp-includes/pluggable.php on line 896
+[26-Mar-2014 19:15:13 UTC] PHP Notice:  Undefined index: show_title in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1151
+[26-Mar-2014 19:15:13 UTC] PHP Notice:  Undefined index: show_photos in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1231
+[26-Mar-2014 19:15:19 UTC] PHP Notice:  Undefined index: show_title in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1151
+[26-Mar-2014 19:15:19 UTC] PHP Notice:  Undefined index: show_photos in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1231
+[26-Mar-2014 19:15:19 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php:1151) in /Users/dnnsldr/Sites/qchs_booster/wp-includes/pluggable.php on line 896
+[26-Mar-2014 19:16:53 UTC] PHP Notice:  Undefined index: show_title in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1151
+[26-Mar-2014 19:16:53 UTC] PHP Notice:  Undefined index: show_photos in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1231
+[26-Mar-2014 19:17:30 UTC] PHP Notice:  Undefined index: show_title in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1151
+[26-Mar-2014 19:17:30 UTC] PHP Notice:  Undefined index: show_photos in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1231
+[26-Mar-2014 19:17:31 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php:1151) in /Users/dnnsldr/Sites/qchs_booster/wp-includes/pluggable.php on line 896
+[26-Mar-2014 19:18:29 UTC] PHP Notice:  Undefined index: show_title in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1151
+[26-Mar-2014 19:18:29 UTC] PHP Notice:  Undefined index: show_photos in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1231
+[26-Mar-2014 19:18:59 UTC] PHP Notice:  Undefined index: show_title in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1151
+[26-Mar-2014 19:18:59 UTC] PHP Notice:  Undefined index: show_photos in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1231
+[26-Mar-2014 19:18:59 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php:1151) in /Users/dnnsldr/Sites/qchs_booster/wp-includes/pluggable.php on line 896
+[26-Mar-2014 19:19:35 UTC] PHP Notice:  Undefined index: show_title in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1151
+[26-Mar-2014 19:19:35 UTC] PHP Notice:  Undefined index: show_photos in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1231
+[26-Mar-2014 19:19:41 UTC] PHP Notice:  Undefined index: show_title in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1151
+[26-Mar-2014 19:19:41 UTC] PHP Notice:  Undefined index: show_photos in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1231
+[26-Mar-2014 19:19:54 UTC] PHP Notice:  Undefined index: show_title in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1151
+[26-Mar-2014 19:19:54 UTC] PHP Notice:  Undefined index: show_photos in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1231
+[26-Mar-2014 19:19:54 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php:1151) in /Users/dnnsldr/Sites/qchs_booster/wp-includes/class-wp-ajax-response.php on line 129
+[26-Mar-2014 19:20:04 UTC] PHP Notice:  Undefined index: show_title in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1151
+[26-Mar-2014 19:20:04 UTC] PHP Notice:  Undefined index: show_photos in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1231
+[26-Mar-2014 19:20:09 UTC] PHP Notice:  Undefined index: show_title in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1151
+[26-Mar-2014 19:20:09 UTC] PHP Notice:  Undefined index: show_photos in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1231
+[26-Mar-2014 19:20:11 UTC] PHP Notice:  Undefined index: show_title in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1151
+[26-Mar-2014 19:20:11 UTC] PHP Notice:  Undefined index: show_photos in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1231
+[26-Mar-2014 19:20:17 UTC] PHP Notice:  Undefined index: show_title in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1151
+[26-Mar-2014 19:20:17 UTC] PHP Notice:  Undefined index: show_photos in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1231
+[26-Mar-2014 19:20:17 UTC] PHP Notice:  Undefined index: mstw_tr_first_name in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 347
+[26-Mar-2014 19:20:17 UTC] PHP Notice:  Undefined index: mstw_tr_last_name in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 350
+[26-Mar-2014 19:20:17 UTC] PHP Notice:  Undefined index: mstw_tr_number in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 353
+[26-Mar-2014 19:20:17 UTC] PHP Notice:  Undefined index: mstw_tr_position in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 356
+[26-Mar-2014 19:20:17 UTC] PHP Notice:  Undefined index: mstw_tr_height in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 359
+[26-Mar-2014 19:20:17 UTC] PHP Notice:  Undefined index: mstw_tr_weight in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 362
+[26-Mar-2014 19:20:17 UTC] PHP Notice:  Undefined index: mstw_tr_year in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 365
+[26-Mar-2014 19:20:17 UTC] PHP Notice:  Undefined index: mstw_tr_experience in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 368
+[26-Mar-2014 19:20:17 UTC] PHP Notice:  Undefined index: mstw_tr_age in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 371
+[26-Mar-2014 19:20:17 UTC] PHP Notice:  Undefined index: mstw_tr_home_town in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 374
+[26-Mar-2014 19:20:17 UTC] PHP Notice:  Undefined index: mstw_tr_last_school in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 377
+[26-Mar-2014 19:20:17 UTC] PHP Notice:  Undefined index: mstw_tr_country in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 380
+[26-Mar-2014 19:20:17 UTC] PHP Notice:  Undefined index: mstw_tr_bats in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 383
+[26-Mar-2014 19:20:17 UTC] PHP Notice:  Undefined index: mstw_tr_throws in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 386
+[26-Mar-2014 19:20:17 UTC] PHP Notice:  Undefined index: mstw_tr_other in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 389
+[26-Mar-2014 19:20:17 UTC] PHP Notice:  Undefined index: show_title in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1151
+[26-Mar-2014 19:20:17 UTC] PHP Notice:  Undefined index: show_photos in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1231
+[26-Mar-2014 19:20:17 UTC] PHP Notice:  Undefined index: mstw_tr_first_name in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 347
+[26-Mar-2014 19:20:17 UTC] PHP Notice:  Undefined index: mstw_tr_last_name in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 350
+[26-Mar-2014 19:20:17 UTC] PHP Notice:  Undefined index: mstw_tr_number in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 353
+[26-Mar-2014 19:20:17 UTC] PHP Notice:  Undefined index: mstw_tr_position in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 356
+[26-Mar-2014 19:20:17 UTC] PHP Notice:  Undefined index: mstw_tr_height in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 359
+[26-Mar-2014 19:20:17 UTC] PHP Notice:  Undefined index: mstw_tr_weight in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 362
+[26-Mar-2014 19:20:17 UTC] PHP Notice:  Undefined index: mstw_tr_year in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 365
+[26-Mar-2014 19:20:17 UTC] PHP Notice:  Undefined index: mstw_tr_experience in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 368
+[26-Mar-2014 19:20:17 UTC] PHP Notice:  Undefined index: mstw_tr_age in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 371
+[26-Mar-2014 19:20:17 UTC] PHP Notice:  Undefined index: mstw_tr_home_town in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 374
+[26-Mar-2014 19:20:17 UTC] PHP Notice:  Undefined index: mstw_tr_last_school in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 377
+[26-Mar-2014 19:20:17 UTC] PHP Notice:  Undefined index: mstw_tr_country in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 380
+[26-Mar-2014 19:20:17 UTC] PHP Notice:  Undefined index: mstw_tr_bats in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 383
+[26-Mar-2014 19:20:17 UTC] PHP Notice:  Undefined index: mstw_tr_throws in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 386
+[26-Mar-2014 19:20:17 UTC] PHP Notice:  Undefined index: mstw_tr_other in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 389
+[26-Mar-2014 19:20:32 UTC] PHP Notice:  Undefined index: show_title in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1151
+[26-Mar-2014 19:20:32 UTC] PHP Notice:  Undefined index: show_photos in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1231
+[26-Mar-2014 19:20:32 UTC] PHP Notice:  Undefined index: mstw_tr_first_name in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 347
+[26-Mar-2014 19:20:32 UTC] PHP Notice:  Undefined index: mstw_tr_last_name in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 350
+[26-Mar-2014 19:20:32 UTC] PHP Notice:  Undefined index: mstw_tr_number in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 353
+[26-Mar-2014 19:20:32 UTC] PHP Notice:  Undefined index: mstw_tr_position in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 356
+[26-Mar-2014 19:20:32 UTC] PHP Notice:  Undefined index: mstw_tr_height in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 359
+[26-Mar-2014 19:20:32 UTC] PHP Notice:  Undefined index: mstw_tr_weight in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 362
+[26-Mar-2014 19:20:32 UTC] PHP Notice:  Undefined index: mstw_tr_year in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 365
+[26-Mar-2014 19:20:32 UTC] PHP Notice:  Undefined index: mstw_tr_experience in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 368
+[26-Mar-2014 19:20:32 UTC] PHP Notice:  Undefined index: mstw_tr_age in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 371
+[26-Mar-2014 19:20:32 UTC] PHP Notice:  Undefined index: mstw_tr_home_town in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 374
+[26-Mar-2014 19:20:32 UTC] PHP Notice:  Undefined index: mstw_tr_last_school in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 377
+[26-Mar-2014 19:20:32 UTC] PHP Notice:  Undefined index: mstw_tr_country in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 380
+[26-Mar-2014 19:20:32 UTC] PHP Notice:  Undefined index: mstw_tr_bats in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 383
+[26-Mar-2014 19:20:32 UTC] PHP Notice:  Undefined index: mstw_tr_throws in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 386
+[26-Mar-2014 19:20:32 UTC] PHP Notice:  Undefined index: mstw_tr_other in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 389
+[26-Mar-2014 19:20:32 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php:1151) in /Users/dnnsldr/Sites/qchs_booster/wp-includes/class-wp-ajax-response.php on line 129
+[26-Mar-2014 19:20:34 UTC] PHP Notice:  Undefined index: show_title in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1151
+[26-Mar-2014 19:20:34 UTC] PHP Notice:  Undefined index: show_photos in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1231
+[26-Mar-2014 19:20:46 UTC] PHP Notice:  Undefined index: show_title in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1151
+[26-Mar-2014 19:20:46 UTC] PHP Notice:  Undefined index: show_photos in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1231
+[26-Mar-2014 19:20:49 UTC] PHP Notice:  Undefined index: show_title in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1151
+[26-Mar-2014 19:20:49 UTC] PHP Notice:  Undefined index: show_photos in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1231
+[26-Mar-2014 19:20:51 UTC] PHP Notice:  Undefined index: show_title in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1151
+[26-Mar-2014 19:20:51 UTC] PHP Notice:  Undefined index: show_photos in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1231
+[26-Mar-2014 19:20:52 UTC] PHP Notice:  Undefined index: show_title in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1151
+[26-Mar-2014 19:20:52 UTC] PHP Notice:  Undefined index: show_photos in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1231
+[26-Mar-2014 19:21:04 UTC] PHP Notice:  Undefined index: show_title in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1151
+[26-Mar-2014 19:21:04 UTC] PHP Notice:  Undefined index: show_photos in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1231
+[26-Mar-2014 19:21:12 UTC] PHP Notice:  Undefined index: show_title in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1151
+[26-Mar-2014 19:21:12 UTC] PHP Notice:  Undefined index: show_photos in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1231
+[26-Mar-2014 19:21:12 UTC] PHP Notice:  Undefined index: mstw_tr_first_name in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 347
+[26-Mar-2014 19:21:12 UTC] PHP Notice:  Undefined index: mstw_tr_last_name in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 350
+[26-Mar-2014 19:21:12 UTC] PHP Notice:  Undefined index: mstw_tr_number in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 353
+[26-Mar-2014 19:21:12 UTC] PHP Notice:  Undefined index: mstw_tr_position in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 356
+[26-Mar-2014 19:21:12 UTC] PHP Notice:  Undefined index: mstw_tr_height in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 359
+[26-Mar-2014 19:21:12 UTC] PHP Notice:  Undefined index: mstw_tr_weight in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 362
+[26-Mar-2014 19:21:12 UTC] PHP Notice:  Undefined index: mstw_tr_year in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 365
+[26-Mar-2014 19:21:12 UTC] PHP Notice:  Undefined index: mstw_tr_experience in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 368
+[26-Mar-2014 19:21:12 UTC] PHP Notice:  Undefined index: mstw_tr_age in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 371
+[26-Mar-2014 19:21:12 UTC] PHP Notice:  Undefined index: mstw_tr_home_town in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 374
+[26-Mar-2014 19:21:12 UTC] PHP Notice:  Undefined index: mstw_tr_last_school in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 377
+[26-Mar-2014 19:21:12 UTC] PHP Notice:  Undefined index: mstw_tr_country in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 380
+[26-Mar-2014 19:21:12 UTC] PHP Notice:  Undefined index: mstw_tr_bats in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 383
+[26-Mar-2014 19:21:12 UTC] PHP Notice:  Undefined index: mstw_tr_throws in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 386
+[26-Mar-2014 19:21:12 UTC] PHP Notice:  Undefined index: mstw_tr_other in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 389
+[26-Mar-2014 19:21:12 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php:1151) in /Users/dnnsldr/Sites/qchs_booster/wp-includes/class-wp-ajax-response.php on line 129
+[26-Mar-2014 19:21:19 UTC] PHP Notice:  Undefined index: show_title in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1151
+[26-Mar-2014 19:21:19 UTC] PHP Notice:  Undefined index: show_photos in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1231
+[26-Mar-2014 19:21:19 UTC] PHP Notice:  Undefined index: mstw_tr_first_name in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 347
+[26-Mar-2014 19:21:19 UTC] PHP Notice:  Undefined index: mstw_tr_last_name in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 350
+[26-Mar-2014 19:21:19 UTC] PHP Notice:  Undefined index: mstw_tr_number in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 353
+[26-Mar-2014 19:21:19 UTC] PHP Notice:  Undefined index: mstw_tr_position in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 356
+[26-Mar-2014 19:21:19 UTC] PHP Notice:  Undefined index: mstw_tr_height in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 359
+[26-Mar-2014 19:21:19 UTC] PHP Notice:  Undefined index: mstw_tr_weight in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 362
+[26-Mar-2014 19:21:19 UTC] PHP Notice:  Undefined index: mstw_tr_year in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 365
+[26-Mar-2014 19:21:19 UTC] PHP Notice:  Undefined index: mstw_tr_experience in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 368
+[26-Mar-2014 19:21:19 UTC] PHP Notice:  Undefined index: mstw_tr_age in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 371
+[26-Mar-2014 19:21:19 UTC] PHP Notice:  Undefined index: mstw_tr_home_town in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 374
+[26-Mar-2014 19:21:19 UTC] PHP Notice:  Undefined index: mstw_tr_last_school in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 377
+[26-Mar-2014 19:21:19 UTC] PHP Notice:  Undefined index: mstw_tr_country in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 380
+[26-Mar-2014 19:21:19 UTC] PHP Notice:  Undefined index: mstw_tr_bats in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 383
+[26-Mar-2014 19:21:19 UTC] PHP Notice:  Undefined index: mstw_tr_throws in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 386
+[26-Mar-2014 19:21:19 UTC] PHP Notice:  Undefined index: mstw_tr_other in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 389
+[26-Mar-2014 19:21:19 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php:1151) in /Users/dnnsldr/Sites/qchs_booster/wp-includes/class-wp-ajax-response.php on line 129
+[26-Mar-2014 19:21:19 UTC] PHP Notice:  Undefined index: show_title in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1151
+[26-Mar-2014 19:21:19 UTC] PHP Notice:  Undefined index: show_photos in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1231
+[26-Mar-2014 19:21:34 UTC] PHP Notice:  Undefined index: show_title in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1151
+[26-Mar-2014 19:21:34 UTC] PHP Notice:  Undefined index: show_photos in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1231
+[26-Mar-2014 19:21:49 UTC] PHP Notice:  Undefined index: show_title in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1151
+[26-Mar-2014 19:21:49 UTC] PHP Notice:  Undefined index: show_photos in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1231
+[26-Mar-2014 19:22:04 UTC] PHP Notice:  Undefined index: show_title in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1151
+[26-Mar-2014 19:22:04 UTC] PHP Notice:  Undefined index: show_photos in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1231
+[26-Mar-2014 19:22:13 UTC] PHP Notice:  Undefined index: show_title in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1151
+[26-Mar-2014 19:22:13 UTC] PHP Notice:  Undefined index: show_photos in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1231
+[26-Mar-2014 19:22:13 UTC] PHP Notice:  Undefined index: show_title in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1151
+[26-Mar-2014 19:22:13 UTC] PHP Notice:  Undefined index: show_photos in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1231
+[26-Mar-2014 19:22:13 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php:1151) in /Users/dnnsldr/Sites/qchs_booster/wp-admin/async-upload.php on line 32
+[26-Mar-2014 19:22:14 UTC] PHP Notice:  Undefined index: show_title in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1151
+[26-Mar-2014 19:22:14 UTC] PHP Notice:  Undefined index: show_photos in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1231
+[26-Mar-2014 19:22:19 UTC] PHP Notice:  Undefined index: show_title in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1151
+[26-Mar-2014 19:22:19 UTC] PHP Notice:  Undefined index: show_photos in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1231
+[26-Mar-2014 19:22:24 UTC] PHP Notice:  Undefined index: show_title in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1151
+[26-Mar-2014 19:22:24 UTC] PHP Notice:  Undefined index: show_photos in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1231
+[26-Mar-2014 19:22:24 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php:1151) in /Users/dnnsldr/Sites/qchs_booster/wp-admin/post.php on line 233
+[26-Mar-2014 19:22:24 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php:1151) in /Users/dnnsldr/Sites/qchs_booster/wp-includes/pluggable.php on line 896
+[26-Mar-2014 19:22:56 UTC] PHP Notice:  Undefined index: show_title in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1151
+[26-Mar-2014 19:22:56 UTC] PHP Notice:  Undefined index: show_photos in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1231
+[26-Mar-2014 19:22:56 UTC] PHP Notice:  Undefined index: mstw_tr_first_name in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 347
+[26-Mar-2014 19:22:56 UTC] PHP Notice:  Undefined index: mstw_tr_last_name in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 350
+[26-Mar-2014 19:22:56 UTC] PHP Notice:  Undefined index: mstw_tr_number in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 353
+[26-Mar-2014 19:22:56 UTC] PHP Notice:  Undefined index: mstw_tr_position in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 356
+[26-Mar-2014 19:22:56 UTC] PHP Notice:  Undefined index: mstw_tr_height in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 359
+[26-Mar-2014 19:22:56 UTC] PHP Notice:  Undefined index: mstw_tr_weight in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 362
+[26-Mar-2014 19:22:56 UTC] PHP Notice:  Undefined index: mstw_tr_year in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 365
+[26-Mar-2014 19:22:56 UTC] PHP Notice:  Undefined index: mstw_tr_experience in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 368
+[26-Mar-2014 19:22:56 UTC] PHP Notice:  Undefined index: mstw_tr_age in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 371
+[26-Mar-2014 19:22:56 UTC] PHP Notice:  Undefined index: mstw_tr_home_town in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 374
+[26-Mar-2014 19:22:56 UTC] PHP Notice:  Undefined index: mstw_tr_last_school in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 377
+[26-Mar-2014 19:22:56 UTC] PHP Notice:  Undefined index: mstw_tr_country in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 380
+[26-Mar-2014 19:22:56 UTC] PHP Notice:  Undefined index: mstw_tr_bats in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 383
+[26-Mar-2014 19:22:56 UTC] PHP Notice:  Undefined index: mstw_tr_throws in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 386
+[26-Mar-2014 19:22:56 UTC] PHP Notice:  Undefined index: mstw_tr_other in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 389
+[26-Mar-2014 19:22:57 UTC] PHP Notice:  Undefined index: show_title in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1151
+[26-Mar-2014 19:22:57 UTC] PHP Notice:  Undefined index: show_photos in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1231
+[26-Mar-2014 19:22:57 UTC] PHP Notice:  Undefined index: mstw_tr_first_name in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 347
+[26-Mar-2014 19:22:57 UTC] PHP Notice:  Undefined index: mstw_tr_last_name in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 350
+[26-Mar-2014 19:22:57 UTC] PHP Notice:  Undefined index: mstw_tr_number in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 353
+[26-Mar-2014 19:22:57 UTC] PHP Notice:  Undefined index: mstw_tr_position in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 356
+[26-Mar-2014 19:22:57 UTC] PHP Notice:  Undefined index: mstw_tr_height in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 359
+[26-Mar-2014 19:22:57 UTC] PHP Notice:  Undefined index: mstw_tr_weight in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 362
+[26-Mar-2014 19:22:57 UTC] PHP Notice:  Undefined index: mstw_tr_year in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 365
+[26-Mar-2014 19:22:57 UTC] PHP Notice:  Undefined index: mstw_tr_experience in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 368
+[26-Mar-2014 19:22:57 UTC] PHP Notice:  Undefined index: mstw_tr_age in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 371
+[26-Mar-2014 19:22:57 UTC] PHP Notice:  Undefined index: mstw_tr_home_town in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 374
+[26-Mar-2014 19:22:57 UTC] PHP Notice:  Undefined index: mstw_tr_last_school in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 377
+[26-Mar-2014 19:22:57 UTC] PHP Notice:  Undefined index: mstw_tr_country in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 380
+[26-Mar-2014 19:22:57 UTC] PHP Notice:  Undefined index: mstw_tr_bats in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 383
+[26-Mar-2014 19:22:57 UTC] PHP Notice:  Undefined index: mstw_tr_throws in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 386
+[26-Mar-2014 19:22:57 UTC] PHP Notice:  Undefined index: mstw_tr_other in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 389
+[26-Mar-2014 19:23:04 UTC] PHP Notice:  Undefined index: show_title in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1151
+[26-Mar-2014 19:23:04 UTC] PHP Notice:  Undefined index: show_photos in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1231
+[26-Mar-2014 19:23:04 UTC] PHP Notice:  Undefined index: show_title in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1151
+[26-Mar-2014 19:23:04 UTC] PHP Notice:  Undefined index: show_photos in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1231
+[26-Mar-2014 19:23:08 UTC] PHP Notice:  Undefined index: show_title in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1151
+[26-Mar-2014 19:23:08 UTC] PHP Notice:  Undefined index: show_photos in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1231
+[26-Mar-2014 19:23:14 UTC] PHP Notice:  Undefined index: show_title in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1151
+[26-Mar-2014 19:23:14 UTC] PHP Notice:  Undefined index: show_photos in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1231
+[26-Mar-2014 19:23:50 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'mstw_gs_set_defaults' not found or invalid function name in /Users/dnnsldr/Sites/qchs_booster/wp-includes/plugin.php on line 429
+[26-Mar-2014 19:23:52 UTC] PHP Warning:  Illegal string offset 'date_label' in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/game-schedules/includes/mstw-game-schedules-admin.php on line 999
+[26-Mar-2014 19:23:52 UTC] PHP Notice:  Uninitialized string offset: 0 in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/game-schedules/includes/mstw-game-schedules-admin.php on line 999
+[26-Mar-2014 19:23:52 UTC] PHP Warning:  Illegal string offset 'opponent_label' in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/game-schedules/includes/mstw-game-schedules-admin.php on line 1000
+[26-Mar-2014 19:23:52 UTC] PHP Notice:  Uninitialized string offset: 0 in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/game-schedules/includes/mstw-game-schedules-admin.php on line 1000
+[26-Mar-2014 19:23:52 UTC] PHP Warning:  Illegal string offset 'location_label' in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/game-schedules/includes/mstw-game-schedules-admin.php on line 1001
+[26-Mar-2014 19:23:52 UTC] PHP Notice:  Uninitialized string offset: 0 in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/game-schedules/includes/mstw-game-schedules-admin.php on line 1001
+[26-Mar-2014 19:23:52 UTC] PHP Warning:  Illegal string offset 'time_label' in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/game-schedules/includes/mstw-game-schedules-admin.php on line 1002
+[26-Mar-2014 19:23:52 UTC] PHP Notice:  Uninitialized string offset: 0 in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/game-schedules/includes/mstw-game-schedules-admin.php on line 1002
+[26-Mar-2014 19:23:52 UTC] PHP Warning:  Illegal string offset 'media_label' in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/game-schedules/includes/mstw-game-schedules-admin.php on line 1003
+[26-Mar-2014 19:23:52 UTC] PHP Notice:  Uninitialized string offset: 0 in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/game-schedules/includes/mstw-game-schedules-admin.php on line 1003
+[26-Mar-2014 19:24:16 UTC] PHP Warning:  Illegal string offset 'date_label' in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/game-schedules/includes/mstw-game-schedules-admin.php on line 999
+[26-Mar-2014 19:24:16 UTC] PHP Notice:  Uninitialized string offset: 0 in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/game-schedules/includes/mstw-game-schedules-admin.php on line 999
+[26-Mar-2014 19:24:16 UTC] PHP Warning:  Illegal string offset 'opponent_label' in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/game-schedules/includes/mstw-game-schedules-admin.php on line 1000
+[26-Mar-2014 19:24:16 UTC] PHP Notice:  Uninitialized string offset: 0 in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/game-schedules/includes/mstw-game-schedules-admin.php on line 1000
+[26-Mar-2014 19:24:16 UTC] PHP Warning:  Illegal string offset 'location_label' in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/game-schedules/includes/mstw-game-schedules-admin.php on line 1001
+[26-Mar-2014 19:24:16 UTC] PHP Notice:  Uninitialized string offset: 0 in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/game-schedules/includes/mstw-game-schedules-admin.php on line 1001
+[26-Mar-2014 19:24:16 UTC] PHP Warning:  Illegal string offset 'time_label' in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/game-schedules/includes/mstw-game-schedules-admin.php on line 1002
+[26-Mar-2014 19:24:16 UTC] PHP Notice:  Uninitialized string offset: 0 in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/game-schedules/includes/mstw-game-schedules-admin.php on line 1002
+[26-Mar-2014 19:24:16 UTC] PHP Warning:  Illegal string offset 'media_label' in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/game-schedules/includes/mstw-game-schedules-admin.php on line 1003
+[26-Mar-2014 19:24:16 UTC] PHP Notice:  Uninitialized string offset: 0 in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/game-schedules/includes/mstw-game-schedules-admin.php on line 1003
+[26-Mar-2014 19:24:18 UTC] PHP Warning:  Illegal string offset 'date_label' in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/game-schedules/includes/mstw-game-schedules-admin.php on line 573
+[26-Mar-2014 19:24:18 UTC] PHP Notice:  Uninitialized string offset: 0 in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/game-schedules/includes/mstw-game-schedules-admin.php on line 573
+[26-Mar-2014 19:24:18 UTC] PHP Warning:  Illegal string offset 'time_label' in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/game-schedules/includes/mstw-game-schedules-admin.php on line 574
+[26-Mar-2014 19:24:18 UTC] PHP Notice:  Uninitialized string offset: 0 in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/game-schedules/includes/mstw-game-schedules-admin.php on line 574
+[26-Mar-2014 19:24:18 UTC] PHP Warning:  Illegal string offset 'opponent_label' in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/game-schedules/includes/mstw-game-schedules-admin.php on line 575
+[26-Mar-2014 19:24:18 UTC] PHP Notice:  Uninitialized string offset: 0 in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/game-schedules/includes/mstw-game-schedules-admin.php on line 575
+[26-Mar-2014 19:24:18 UTC] PHP Warning:  Illegal string offset 'media_label' in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/game-schedules/includes/mstw-game-schedules-admin.php on line 576
+[26-Mar-2014 19:24:18 UTC] PHP Notice:  Uninitialized string offset: 0 in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/game-schedules/includes/mstw-game-schedules-admin.php on line 576
+[26-Mar-2014 19:24:18 UTC] PHP Warning:  Illegal string offset 'location_label' in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/game-schedules/includes/mstw-game-schedules-admin.php on line 690
+[26-Mar-2014 19:24:18 UTC] PHP Notice:  Uninitialized string offset: 0 in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/game-schedules/includes/mstw-game-schedules-admin.php on line 690
+[26-Mar-2014 19:26:59 UTC] PHP Warning:  Illegal string offset 'date_label' in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/game-schedules/includes/mstw-game-schedules-admin.php on line 999
+[26-Mar-2014 19:26:59 UTC] PHP Notice:  Uninitialized string offset: 0 in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/game-schedules/includes/mstw-game-schedules-admin.php on line 999
+[26-Mar-2014 19:26:59 UTC] PHP Warning:  Illegal string offset 'opponent_label' in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/game-schedules/includes/mstw-game-schedules-admin.php on line 1000
+[26-Mar-2014 19:26:59 UTC] PHP Notice:  Uninitialized string offset: 0 in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/game-schedules/includes/mstw-game-schedules-admin.php on line 1000
+[26-Mar-2014 19:26:59 UTC] PHP Warning:  Illegal string offset 'location_label' in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/game-schedules/includes/mstw-game-schedules-admin.php on line 1001
+[26-Mar-2014 19:26:59 UTC] PHP Notice:  Uninitialized string offset: 0 in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/game-schedules/includes/mstw-game-schedules-admin.php on line 1001
+[26-Mar-2014 19:26:59 UTC] PHP Warning:  Illegal string offset 'time_label' in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/game-schedules/includes/mstw-game-schedules-admin.php on line 1002
+[26-Mar-2014 19:26:59 UTC] PHP Notice:  Uninitialized string offset: 0 in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/game-schedules/includes/mstw-game-schedules-admin.php on line 1002
+[26-Mar-2014 19:26:59 UTC] PHP Warning:  Illegal string offset 'media_label' in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/game-schedules/includes/mstw-game-schedules-admin.php on line 1003
+[26-Mar-2014 19:26:59 UTC] PHP Notice:  Uninitialized string offset: 0 in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/game-schedules/includes/mstw-game-schedules-admin.php on line 1003
+[26-Mar-2014 19:28:14 UTC] PHP Warning:  Illegal string offset 'date_label' in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/game-schedules/includes/mstw-game-schedules-admin.php on line 573
+[26-Mar-2014 19:28:14 UTC] PHP Notice:  Uninitialized string offset: 0 in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/game-schedules/includes/mstw-game-schedules-admin.php on line 573
+[26-Mar-2014 19:28:14 UTC] PHP Warning:  Illegal string offset 'time_label' in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/game-schedules/includes/mstw-game-schedules-admin.php on line 574
+[26-Mar-2014 19:28:14 UTC] PHP Notice:  Uninitialized string offset: 0 in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/game-schedules/includes/mstw-game-schedules-admin.php on line 574
+[26-Mar-2014 19:28:14 UTC] PHP Warning:  Illegal string offset 'opponent_label' in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/game-schedules/includes/mstw-game-schedules-admin.php on line 575
+[26-Mar-2014 19:28:14 UTC] PHP Notice:  Uninitialized string offset: 0 in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/game-schedules/includes/mstw-game-schedules-admin.php on line 575
+[26-Mar-2014 19:28:14 UTC] PHP Warning:  Illegal string offset 'media_label' in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/game-schedules/includes/mstw-game-schedules-admin.php on line 576
+[26-Mar-2014 19:28:14 UTC] PHP Notice:  Uninitialized string offset: 0 in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/game-schedules/includes/mstw-game-schedules-admin.php on line 576
+[26-Mar-2014 19:28:14 UTC] PHP Warning:  Illegal string offset 'location_label' in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/game-schedules/includes/mstw-game-schedules-admin.php on line 690
+[26-Mar-2014 19:28:14 UTC] PHP Notice:  Uninitialized string offset: 0 in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/game-schedules/includes/mstw-game-schedules-admin.php on line 690
+[26-Mar-2014 19:28:29 UTC] PHP Notice:  Undefined index: team_full_name in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/game-schedules/includes/mstw-game-schedules-admin.php on line 959
+[26-Mar-2014 19:28:29 UTC] PHP Notice:  Undefined index: team_short_name in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/game-schedules/includes/mstw-game-schedules-admin.php on line 961
+[26-Mar-2014 19:28:29 UTC] PHP Notice:  Undefined index: team_full_mascot in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/game-schedules/includes/mstw-game-schedules-admin.php on line 963
+[26-Mar-2014 19:28:29 UTC] PHP Notice:  Undefined index: team_short_mascot in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/game-schedules/includes/mstw-game-schedules-admin.php on line 965
+[26-Mar-2014 19:28:29 UTC] PHP Notice:  Undefined index: team_home_venue in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/game-schedules/includes/mstw-game-schedules-admin.php on line 967
+[26-Mar-2014 19:28:29 UTC] PHP Notice:  Undefined index: team_link in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/game-schedules/includes/mstw-game-schedules-admin.php on line 969
+[26-Mar-2014 19:28:29 UTC] PHP Notice:  Undefined index: team_logo in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/game-schedules/includes/mstw-game-schedules-admin.php on line 971
+[26-Mar-2014 19:28:29 UTC] PHP Notice:  Undefined index: team_alt_logo in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/game-schedules/includes/mstw-game-schedules-admin.php on line 973
+[26-Mar-2014 19:28:29 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/game-schedules/includes/mstw-game-schedules-admin.php:959) in /Users/dnnsldr/Sites/qchs_booster/wp-includes/class-wp-ajax-response.php on line 129
+[26-Mar-2014 19:28:54 UTC] PHP Notice:  Undefined index: team_home_venue in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/game-schedules/includes/mstw-game-schedules-admin.php on line 967
+[26-Mar-2014 19:28:54 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/game-schedules/includes/mstw-game-schedules-admin.php:967) in /Users/dnnsldr/Sites/qchs_booster/wp-includes/pluggable.php on line 896
+[26-Mar-2014 19:29:32 UTC] PHP Notice:  Undefined index: show_title in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1151
+[26-Mar-2014 19:29:32 UTC] PHP Notice:  Undefined index: show_photos in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1231
+[26-Mar-2014 19:29:35 UTC] PHP Notice:  Undefined index: show_title in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1151
+[26-Mar-2014 19:29:35 UTC] PHP Notice:  Undefined index: show_photos in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1231
+[26-Mar-2014 19:29:35 UTC] PHP Notice:  Undefined variable: teams in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 152
+[26-Mar-2014 19:29:35 UTC] PHP Notice:  Undefined index: teams in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 159
+[26-Mar-2014 19:29:51 UTC] PHP Notice:  Undefined index: show_title in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1151
+[26-Mar-2014 19:29:51 UTC] PHP Notice:  Undefined index: show_photos in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1231
+[26-Mar-2014 19:30:06 UTC] PHP Notice:  Undefined index: show_title in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1151
+[26-Mar-2014 19:30:06 UTC] PHP Notice:  Undefined index: show_photos in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1231
+[26-Mar-2014 19:30:21 UTC] PHP Notice:  Undefined index: show_title in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1151
+[26-Mar-2014 19:30:21 UTC] PHP Notice:  Undefined index: show_photos in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1231
+[26-Mar-2014 19:30:36 UTC] PHP Notice:  Undefined index: show_title in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1151
+[26-Mar-2014 19:30:36 UTC] PHP Notice:  Undefined index: show_photos in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1231
+[26-Mar-2014 19:30:51 UTC] PHP Notice:  Undefined index: show_title in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1151
+[26-Mar-2014 19:30:51 UTC] PHP Notice:  Undefined index: show_photos in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1231
+[26-Mar-2014 19:30:55 UTC] PHP Notice:  Undefined index: show_title in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1151
+[26-Mar-2014 19:30:55 UTC] PHP Notice:  Undefined index: show_photos in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/team-rosters/includes/mstw-team-rosters-admin.php on line 1231
+[26-Mar-2014 19:30:59 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'mstw_ls_set_defaults' not found or invalid function name in /Users/dnnsldr/Sites/qchs_booster/wp-includes/plugin.php on line 429
+[26-Mar-2014 19:31:10 UTC] PHP Notice:  Undefined index: mstw_ls_rank in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 357
+[26-Mar-2014 19:31:10 UTC] PHP Notice:  Undefined index: mstw_ls_name in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 360
+[26-Mar-2014 19:31:10 UTC] PHP Notice:  Undefined index: mstw_ls_team_link in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 363
+[26-Mar-2014 19:31:10 UTC] PHP Notice:  Undefined index: mstw_ls_mascot in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 366
+[26-Mar-2014 19:31:10 UTC] PHP Notice:  Undefined index: mstw_ls_games_played in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 369
+[26-Mar-2014 19:31:10 UTC] PHP Notice:  Undefined index: mstw_ls_wins in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 372
+[26-Mar-2014 19:31:10 UTC] PHP Notice:  Undefined index: mstw_ls_losses in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 375
+[26-Mar-2014 19:31:10 UTC] PHP Notice:  Undefined index: mstw_ls_ties in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 378
+[26-Mar-2014 19:31:10 UTC] PHP Notice:  Undefined index: mstw_ls_other in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 381
+[26-Mar-2014 19:31:10 UTC] PHP Notice:  Undefined index: mstw_ls_wins in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 383
+[26-Mar-2014 19:31:10 UTC] PHP Notice:  Undefined index: mstw_ls_losses in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 383
+[26-Mar-2014 19:31:10 UTC] PHP Notice:  Undefined index: mstw_ls_ties in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 383
+[26-Mar-2014 19:31:10 UTC] PHP Notice:  Undefined index: mstw_ls_points in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 393
+[26-Mar-2014 19:31:10 UTC] PHP Notice:  Undefined index: mstw_ls_games_behind in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 396
+[26-Mar-2014 19:31:10 UTC] PHP Notice:  Undefined index: mstw_ls_goals_for in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 399
+[26-Mar-2014 19:31:10 UTC] PHP Notice:  Undefined index: mstw_ls_goals_against in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 402
+[26-Mar-2014 19:31:10 UTC] PHP Notice:  Undefined index: mstw_ls_last_5 in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 405
+[26-Mar-2014 19:31:10 UTC] PHP Notice:  Undefined index: mstw_ls_last_10 in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 408
+[26-Mar-2014 19:31:10 UTC] PHP Notice:  Undefined index: mstw_ls_streak in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 411
+[26-Mar-2014 19:31:10 UTC] PHP Notice:  Undefined index: mstw_ls_home in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 414
+[26-Mar-2014 19:31:10 UTC] PHP Notice:  Undefined index: mstw_ls_away in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 417
+[26-Mar-2014 19:31:10 UTC] PHP Notice:  Undefined index: mstw_ls_division in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 420
+[26-Mar-2014 19:31:10 UTC] PHP Notice:  Undefined index: mstw_ls_conference in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 423
+[26-Mar-2014 19:31:10 UTC] PHP Notice:  Undefined index: mstw_ls_rank in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 357
+[26-Mar-2014 19:31:10 UTC] PHP Notice:  Undefined index: mstw_ls_name in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 360
+[26-Mar-2014 19:31:10 UTC] PHP Notice:  Undefined index: mstw_ls_team_link in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 363
+[26-Mar-2014 19:31:10 UTC] PHP Notice:  Undefined index: mstw_ls_mascot in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 366
+[26-Mar-2014 19:31:10 UTC] PHP Notice:  Undefined index: mstw_ls_games_played in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 369
+[26-Mar-2014 19:31:10 UTC] PHP Notice:  Undefined index: mstw_ls_wins in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 372
+[26-Mar-2014 19:31:10 UTC] PHP Notice:  Undefined index: mstw_ls_losses in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 375
+[26-Mar-2014 19:31:10 UTC] PHP Notice:  Undefined index: mstw_ls_ties in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 378
+[26-Mar-2014 19:31:10 UTC] PHP Notice:  Undefined index: mstw_ls_other in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 381
+[26-Mar-2014 19:31:10 UTC] PHP Notice:  Undefined index: mstw_ls_wins in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 383
+[26-Mar-2014 19:31:10 UTC] PHP Notice:  Undefined index: mstw_ls_losses in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 383
+[26-Mar-2014 19:31:10 UTC] PHP Notice:  Undefined index: mstw_ls_ties in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 383
+[26-Mar-2014 19:31:10 UTC] PHP Notice:  Undefined index: mstw_ls_points in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 393
+[26-Mar-2014 19:31:10 UTC] PHP Notice:  Undefined index: mstw_ls_games_behind in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 396
+[26-Mar-2014 19:31:10 UTC] PHP Notice:  Undefined index: mstw_ls_goals_for in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 399
+[26-Mar-2014 19:31:10 UTC] PHP Notice:  Undefined index: mstw_ls_goals_against in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 402
+[26-Mar-2014 19:31:10 UTC] PHP Notice:  Undefined index: mstw_ls_last_5 in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 405
+[26-Mar-2014 19:31:10 UTC] PHP Notice:  Undefined index: mstw_ls_last_10 in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 408
+[26-Mar-2014 19:31:10 UTC] PHP Notice:  Undefined index: mstw_ls_streak in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 411
+[26-Mar-2014 19:31:10 UTC] PHP Notice:  Undefined index: mstw_ls_home in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 414
+[26-Mar-2014 19:31:10 UTC] PHP Notice:  Undefined index: mstw_ls_away in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 417
+[26-Mar-2014 19:31:10 UTC] PHP Notice:  Undefined index: mstw_ls_division in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 420
+[26-Mar-2014 19:31:10 UTC] PHP Notice:  Undefined index: mstw_ls_conference in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 423
+[26-Mar-2014 19:31:36 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'mstw_ls_set_defaults' not found or invalid function name in /Users/dnnsldr/Sites/qchs_booster/wp-includes/plugin.php on line 429
+[26-Mar-2014 19:31:42 UTC] PHP Notice:  Undefined index: mstw_ls_rank in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 357
+[26-Mar-2014 19:31:42 UTC] PHP Notice:  Undefined index: mstw_ls_name in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 360
+[26-Mar-2014 19:31:42 UTC] PHP Notice:  Undefined index: mstw_ls_team_link in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 363
+[26-Mar-2014 19:31:42 UTC] PHP Notice:  Undefined index: mstw_ls_mascot in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 366
+[26-Mar-2014 19:31:42 UTC] PHP Notice:  Undefined index: mstw_ls_games_played in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 369
+[26-Mar-2014 19:31:42 UTC] PHP Notice:  Undefined index: mstw_ls_wins in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 372
+[26-Mar-2014 19:31:42 UTC] PHP Notice:  Undefined index: mstw_ls_losses in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 375
+[26-Mar-2014 19:31:42 UTC] PHP Notice:  Undefined index: mstw_ls_ties in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 378
+[26-Mar-2014 19:31:42 UTC] PHP Notice:  Undefined index: mstw_ls_other in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 381
+[26-Mar-2014 19:31:42 UTC] PHP Notice:  Undefined index: mstw_ls_wins in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 383
+[26-Mar-2014 19:31:42 UTC] PHP Notice:  Undefined index: mstw_ls_losses in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 383
+[26-Mar-2014 19:31:42 UTC] PHP Notice:  Undefined index: mstw_ls_ties in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 383
+[26-Mar-2014 19:31:42 UTC] PHP Notice:  Undefined index: mstw_ls_points in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 393
+[26-Mar-2014 19:31:42 UTC] PHP Notice:  Undefined index: mstw_ls_games_behind in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 396
+[26-Mar-2014 19:31:42 UTC] PHP Notice:  Undefined index: mstw_ls_goals_for in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 399
+[26-Mar-2014 19:31:42 UTC] PHP Notice:  Undefined index: mstw_ls_goals_against in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 402
+[26-Mar-2014 19:31:42 UTC] PHP Notice:  Undefined index: mstw_ls_last_5 in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 405
+[26-Mar-2014 19:31:42 UTC] PHP Notice:  Undefined index: mstw_ls_last_10 in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 408
+[26-Mar-2014 19:31:42 UTC] PHP Notice:  Undefined index: mstw_ls_streak in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 411
+[26-Mar-2014 19:31:42 UTC] PHP Notice:  Undefined index: mstw_ls_home in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 414
+[26-Mar-2014 19:31:42 UTC] PHP Notice:  Undefined index: mstw_ls_away in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 417
+[26-Mar-2014 19:31:42 UTC] PHP Notice:  Undefined index: mstw_ls_division in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 420
+[26-Mar-2014 19:31:42 UTC] PHP Notice:  Undefined index: mstw_ls_conference in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 423
+[26-Mar-2014 19:31:42 UTC] PHP Notice:  Undefined index: mstw_ls_rank in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 357
+[26-Mar-2014 19:31:42 UTC] PHP Notice:  Undefined index: mstw_ls_name in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 360
+[26-Mar-2014 19:31:42 UTC] PHP Notice:  Undefined index: mstw_ls_team_link in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 363
+[26-Mar-2014 19:31:42 UTC] PHP Notice:  Undefined index: mstw_ls_mascot in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 366
+[26-Mar-2014 19:31:42 UTC] PHP Notice:  Undefined index: mstw_ls_games_played in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 369
+[26-Mar-2014 19:31:42 UTC] PHP Notice:  Undefined index: mstw_ls_wins in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 372
+[26-Mar-2014 19:31:42 UTC] PHP Notice:  Undefined index: mstw_ls_losses in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 375
+[26-Mar-2014 19:31:42 UTC] PHP Notice:  Undefined index: mstw_ls_ties in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 378
+[26-Mar-2014 19:31:42 UTC] PHP Notice:  Undefined index: mstw_ls_other in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 381
+[26-Mar-2014 19:31:42 UTC] PHP Notice:  Undefined index: mstw_ls_wins in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 383
+[26-Mar-2014 19:31:42 UTC] PHP Notice:  Undefined index: mstw_ls_losses in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 383
+[26-Mar-2014 19:31:42 UTC] PHP Notice:  Undefined index: mstw_ls_ties in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 383
+[26-Mar-2014 19:31:42 UTC] PHP Notice:  Undefined index: mstw_ls_points in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 393
+[26-Mar-2014 19:31:42 UTC] PHP Notice:  Undefined index: mstw_ls_games_behind in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 396
+[26-Mar-2014 19:31:42 UTC] PHP Notice:  Undefined index: mstw_ls_goals_for in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 399
+[26-Mar-2014 19:31:42 UTC] PHP Notice:  Undefined index: mstw_ls_goals_against in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 402
+[26-Mar-2014 19:31:42 UTC] PHP Notice:  Undefined index: mstw_ls_last_5 in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 405
+[26-Mar-2014 19:31:42 UTC] PHP Notice:  Undefined index: mstw_ls_last_10 in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 408
+[26-Mar-2014 19:31:42 UTC] PHP Notice:  Undefined index: mstw_ls_streak in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 411
+[26-Mar-2014 19:31:42 UTC] PHP Notice:  Undefined index: mstw_ls_home in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 414
+[26-Mar-2014 19:31:42 UTC] PHP Notice:  Undefined index: mstw_ls_away in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 417
+[26-Mar-2014 19:31:42 UTC] PHP Notice:  Undefined index: mstw_ls_division in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 420
+[26-Mar-2014 19:31:42 UTC] PHP Notice:  Undefined index: mstw_ls_conference in /Users/dnnsldr/Sites/qchs_booster/wp-content/plugins/league-standings/includes/mstw-league-standings-admin.php on line 423

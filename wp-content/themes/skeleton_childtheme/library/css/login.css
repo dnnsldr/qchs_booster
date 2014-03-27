@@ -27,7 +27,7 @@ http://codex.wordpress.org/Creating_Admin_Themes
 	outline: 0!important;
 }
 #login {width: 355px}
-body, body.login {background: #000}
+body, body.login {background: #000;height: auto}
 body.login h1 a {
 	background: url('../images/bulldog-logo.png') center center no-repeat transparent;
 	background-size: 355px 292px;
