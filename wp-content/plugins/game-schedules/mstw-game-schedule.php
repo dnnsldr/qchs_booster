@@ -344,7 +344,8 @@ function mstw_gs_delete_plugin_options() {
 			'show_in_menu' 		=> 'edit.php?post_type=scheduled_games',
 			'query_var' 		=> 'mstw_gs_teams',
 			'rewrite' 			=> array(
-				'slug' 			=> 'mstw-gs-teams',
+				//'slug' 			=> 'mstw-gs-teams',
+				'slug' 			=> 'teams',
 				'with_front' 	=> false,
 			),
 			'supports' 			=> array(
@@ -380,7 +381,8 @@ function mstw_gs_delete_plugin_options() {
 			'show_in_menu' 		=> 'edit.php?post_type=scheduled_games',
 			'query_var' 		=> 'mstw_gs_schedules',
 			'rewrite' 			=> array(
-				'slug' 			=> 'mstw_gs_schedules',
+				// dte'slug' 			=> 'mstw_gs_schedules',
+				'slug' 				=> 'season',
 				'with_front' 	=> false,
 			),
 			'supports' 			=> array(
@@ -390,18 +392,18 @@ function mstw_gs_delete_plugin_options() {
 			//							'edit_posts',
 			//							),
 			'labels' 			=> array(
-										'name' => __( 'Schedules', 'mstw-loc-domain' ),
-										'singular_name' => __( 'Schedule', 'mstw-loc-domain' ),
-										'all_items' => __( 'Schedules', 'mstw-loc-domain' ),
-										'add_new' => __( 'Add New Schedule', 'mstw-loc-domain' ),
-										'add_new_item' => __( 'Add Schedule', 'mstw-loc-domain' ),
-										'edit_item' => __( 'Edit Schedule', 'mstw-loc-domain' ),
-										'new_item' => __( 'New Schedule', 'mstw-loc-domain' ),
+										'name' => __( 'Seasons', 'mstw-loc-domain' ),
+										'singular_name' => __( 'Season', 'mstw-loc-domain' ),
+										'all_items' => __( 'Seasons', 'mstw-loc-domain' ),
+										'add_new' => __( 'Add New Season', 'mstw-loc-domain' ),
+										'add_new_item' => __( 'Add Season', 'mstw-loc-domain' ),
+										'edit_item' => __( 'Edit Season', 'mstw-loc-domain' ),
+										'new_item' => __( 'New Season', 'mstw-loc-domain' ),
 										//'View Game Schedule' needs a custom page template that is of no value.
 										'view_item' => null, 
-										'search_items' => __( 'Search Schedules', 'mstw-loc-domain' ),
-										'not_found' => __( 'No Schedules Found', 'mstw-loc-domain' ),
-										'not_found_in_trash' => __( 'No Schedules Found In Trash', 'mstw-loc-domain' ),
+										'search_items' => __( 'Search Seasons', 'mstw-loc-domain' ),
+										'not_found' => __( 'No Seasons Found', 'mstw-loc-domain' ),
+										'not_found_in_trash' => __( 'No Seasons Found In Trash', 'mstw-loc-domain' ),
 										)
 			);
 			
@@ -544,7 +546,9 @@ function mstw_gs_delete_plugin_options() {
 			// Make table of posts
 			// Start with the table header
 			$output .= '<table class="mstw-gs-table">'; 
-			$output .= "<thead class='mstw-gs-table-head mstw-gs-table-head_" . $scheds[0] . "'><tr>";
+			
+			//dte removing the table header
+			/*$output .= "<thead class='mstw-gs-table-head mstw-gs-table-head_" . $scheds[0] . "'><tr>";
 			if( $show_date ) { 
 				$output .= '<th>'. $date_label . '</th>';
 			}
@@ -564,7 +568,7 @@ function mstw_gs_delete_plugin_options() {
 			}
 			
 			$output .= '</tr></thead>';
-			
+			*/
 			   
 			// Keeps track of even and odd rows. Start with row 1 = odd.
 			$even_and_odd = array('even', 'odd');
@@ -579,9 +583,11 @@ function mstw_gs_delete_plugin_options() {
 				$row_class .= ' ' . $row_class . '_' . $scheds[0];
 				
 				$is_home_game = get_post_meta($post->ID, '_mstw_gs_home_game', true );
-				if ( $is_home_game == 'home' ) 
+				if ( $is_home_game == 'home' ) {
 					$row_class .= ' mstw-gs-home';
-				
+				} else {
+					$row_class .= ' mstw-gs-away';
+				}
 				$row_tr = '<tr class="' . $row_class . '">';
 				$row_td = '<td class="' . $row_class . '">'; 
 				
@@ -590,8 +596,19 @@ function mstw_gs_delete_plugin_options() {
 				
 				// column 1: Build the game date in a specified format
 				if ( $show_date ) {
-					$new_date_string = mstw_date_loc( $dtg_format, (int)get_post_meta( $post->ID, '_mstw_gs_unix_dtg', true ) );
-					/*$new_date_string = '<span><?php echo mstw_date_loc("M"); ?></span><span><?php echomstw_date_loc("d");?></span>';*/
+					//dte month day month string and daystring to separate out the dates
+					$month_format = "M";
+					$day_format = "d";
+					$month_string = mstw_date_loc( $month_format, (int)get_post_meta( $post->ID, '_mstw_gs_unix_dtg', true ) );
+					$day_string = mstw_date_loc( $day_format, (int)get_post_meta( $post->ID, '_mstw_gs_unix_dtg', true ) );
+					
+					//$new_date_string = mstw_date_loc( $dtg_format, (int)get_post_meta( $post->ID, '_mstw_gs_unix_dtg', true ) );
+					/*$new_date_string = '<span><?php echo mstw_date_loc("M"); ?></span><span><?php echo mstw_date_loc("d");?></span>';*/
+					//dte to make the dates styleable
+					$new_date_string = '<span class="monthDisplay">'.$month_string.'</span><span class="dayDisplay">'.$day_string.'</span>';
+					
+					
+					
 					//$new_date_string = $mstw_gs_dtg_format;
 					
 					//$new_date_string = date( $mstw_gs_dtg_format, get_post_meta( $post->ID, '_mstw_gs_unix_date', true) );
@@ -602,15 +619,17 @@ function mstw_gs_delete_plugin_options() {
 				
 				// column 2: create the opponent entry ALWAYS SHOWN
 				$opponent_entry = mstw_gs_build_opponent_entry( $post, $args, "table" );
-				$row_string =  $row_string . $row_td . $opponent_entry . '</td>';
+				//dte
+				if ( $is_home_game == 'home' ) {
 				
-				// column 3: create the location entry
-				if ( $show_location ) {
-					$location_entry = mstw_gs_build_location_entry( $post, $args );
-					$row_string =  $row_string . $row_td . $location_entry . '</td>';
+					$row_string =  $row_string . $row_td . '<span class="opponent">' . $opponent_entry .'</span><br><em>@</em><span class="homeTeam">Queen Creek<span></td>';
+				
+				} else {
+				
+				$row_string =  $row_string . $row_td . '<span class="homeTeam">Queen Creek</span><em>@</em><br><span class="opponent">' . $opponent_entry .'</span></td>';
 				}
 				
-				// column 4: create the time/results entry
+				// column 3: create the time/results entry
 				// 20120221-MAO: Rewritten to handle new game time entry logic
 				//		and to use time format settings
 				
@@ -639,6 +658,14 @@ function mstw_gs_delete_plugin_options() {
 						}	
 					}
 				}
+				
+				// column 4: create the location entry
+				if ( $show_location ) {
+					$location_entry = mstw_gs_build_location_entry( $post, $args );
+					$row_string =  $row_string . $row_td . $location_entry . '</td>';
+				}
+				
+				
 				
 				// column 5: create the media listings in a pretty format 
 				
@@ -1764,8 +1791,10 @@ class mstw_gs_sched_widget extends WP_Widget {
 		//$options = wp_parse_args( $options, mstw_gs_get_defaults() );
 		
 		//Build the date format from the display settings
+		
 		// dte removed
 		//$date_format = ( $options['table_widget_date_format'] == 'custom' ? $options['custom_table_widget_date_format'] : $options['table_widget_date_format'] );
+		
 		//dte added to split out the dates on the schedule widget.
 		$month_format = "M";
 		$day_format = "d";
@@ -1844,8 +1873,13 @@ class mstw_gs_sched_widget extends WP_Widget {
 				$is_home_game = get_post_meta($post->ID, '_mstw_gs_home_game', true );
 				$even_or_odd_row = $even_and_odd[$row_cnt]; 
 				$row_class = "mstw-gs-sw-$even_or_odd_row mstw-gs-sw-$even_or_odd_row" . "_$sched_id";
-				if ( $is_home_game == 'home' ) 
+				
+				//dte lets add a class to home and away games
+				if ( $is_home_game == 'home' ) {
 					$row_class = $row_class . ' mstw-gs-sw-home';
+				} else {
+					$row_class = $row_class . ' mstw-gs-sw-away';
+				}
 			
 				$row_tr = '<tr class="' . $row_class . '">';
 				//$row_tr = '<tr>';
@@ -1865,8 +1899,9 @@ class mstw_gs_sched_widget extends WP_Widget {
 					// dte removed
 					//$row_string = $row_string. $row_td . $date_string . '</td>';
 					//dte added to split date with css
-					$row_string = $row_string. $row_td .'<span>'.$month_string.'</span><span>'.$day_string.'</span></td>';
+					$row_string = $row_string. $row_td .'<span class="monthDisplay">'.$month_string.'</span><span class="dayDisplay">'.$day_string.'</span></td>';
 				}
+				
 				// column 2: create the opponent entry
 				//$opponent = get_post_meta( $post->ID, '_mstw_gs_opponent', true);
 				$opponent = mstw_gs_build_opponent_entry( $post, $options, 'table' );

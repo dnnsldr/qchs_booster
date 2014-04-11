@@ -342,6 +342,12 @@ Author URI: http://www.simplethemes.com/
   	//behavior: $pie-behavior;
   	position: relative;
 }
+body.dark .inset {
+	$inset-color: hsl(0, 0%, 8%);
+	background-color: $inset-color;
+	@include box-shadow (inset 1px 1px 10px darken($inset-color,5%));
+  	@include single-text-shadow(1px, 1px, 0, $color: darken($inset-color,100%));
+}
 
 
 .cta,.outset {
@@ -356,6 +362,14 @@ Author URI: http://www.simplethemes.com/
   	//behavior: $pie-behavior;
   	position: relative;
 }
+body.dark .cta,body.dark .outset {
+	$outset-color: hsl(0, 0%, 10%);
+	background-color: $outset-color;
+	border: 1px solid shade($outset-color,10%);
+  	@include single-text-shadow(1px, 1px, 0, $color: darken($outset-color,20%));
+	@include box-shadow (inset 1px 1px 0 tint($outset-color,5%),inset -1px -1px 0 tint($outset-color,5%));
+}
+
 
 .cta p {
 	margin: 0;
@@ -501,6 +515,19 @@ ul.tabs {
 	  zoom: 1;
 	}
 
+body.dark ul.tabs {
+	border-bottom: solid 1px hsl(0, 0%, 20%);
+	li a {
+		background-color: hsl(0, 0%, 20%);
+		border-color: hsl(0, 0%, 25%);
+	}
+	li a.active {
+		color: #fff;
+		background-color: hsl(0, 0%, 13%);
+		border-color: hsl(0, 0%, 20%);
+	}
+}
+
 /* @end */
 
 /* @group Toggles */
@@ -543,6 +570,18 @@ p.trigger a {
 .toggle_container {
 	padding: 10px 0 0 0;
 	margin-bottom: 1px;
+}
+
+// Dark Styles
+body.dark p.trigger {
+	background: hsl(0, 0%, 15%) url(../images/16_expand.png) no-repeat 10px center;
+	border-bottom: 1px solid hsl(0, 0%, 18%);
+	border-top: 1px solid hsl(0, 0%, 15%);
+	&:hover {
+		border-top: 1px solid hsl(0, 0%, 18%);
+		border-bottom: 1px solid hsl(0, 0%, 18%);
+		background: hsl(0, 0%, 18%) url(../images/16_expand.png) no-repeat 10px center;
+	}
 }
 
 /* @end */
