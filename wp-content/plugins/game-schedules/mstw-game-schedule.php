@@ -588,7 +588,7 @@ function mstw_gs_delete_plugin_options() {
 				} else {
 					$row_class .= ' mstw-gs-away';
 				}
-				$row_tr = '<tr class="' . $row_class . '">';
+				$row_tr = '<tr class="col-lg-12 ' . $row_class . '">';
 				$row_td = '<td class="' . $row_class . '">'; 
 				
 				// create the row
@@ -613,7 +613,7 @@ function mstw_gs_delete_plugin_options() {
 					
 					//$new_date_string = date( $mstw_gs_dtg_format, get_post_meta( $post->ID, '_mstw_gs_unix_date', true) );
 					
-					$row_string = $row_string. $row_td . $new_date_string . '</td>';
+					$row_string = $row_string. '<td class="col-lg-1 col-md-1 gameDate' . $row_class . '">' .$new_date_string. '</td>';
 					//$row_string = $row_string. $row_td . get_post_meta( $post->ID, '_mstw_gs_unix_date', true ) . '</td>';
 				}
 				
@@ -622,11 +622,11 @@ function mstw_gs_delete_plugin_options() {
 				//dte
 				if ( $is_home_game == 'home' ) {
 				
-					$row_string =  $row_string . $row_td . '<span class="opponent">' . $opponent_entry .'</span><br><em>@</em><span class="homeTeam">Queen Creek<span></td>';
+					$row_string =  $row_string . '<td class="col-lg-6 col-md-6 teamName ' . $row_class . '"><span class="homeTeam">' . $opponent_entry .'</span><span class="atTeam"><em>@</em>Queen Creek<span></td>';
 				
 				} else {
 				
-				$row_string =  $row_string . $row_td . '<span class="homeTeam">Queen Creek</span><em>@</em><br><span class="opponent">' . $opponent_entry .'</span></td>';
+				$row_string =  $row_string . '<td class="col-lg-6 col-md-6 teamName ' . $row_class . '"><span class="homeTeam">Queen Creek</span><span class="atTeam"><em>@</em>' . $opponent_entry .'</span></td>';
 				}
 				
 				// column 3: create the time/results entry
@@ -635,26 +635,27 @@ function mstw_gs_delete_plugin_options() {
 				
 				if ( $show_time ) {
 					// $time_entry = mstw_gs_build_time_entry( $post );
+					
 					// If there is a game result, stick it in and we're done
 					$game_result = get_post_meta( $post->ID, '_mstw_gs_game_result', true); 
 					if ( $game_result != '' ) {
-						$row_string .=  $row_td . $game_result . '</td>';
+						$row_string .=  '<td class="col-lg-3 col-md-3 gameInfo ' . $row_class . '">' . $game_result . '</td>';
 					}
 					else {	
-						// There's no game result, so add a game time
+					// There's no game result, so add a game time
 						// Check if the game time is TBA
 						$time_is_tba = get_post_meta( $post->ID, '_mstw_gs_game_time_tba', true );
 						
 						if ( $time_is_tba != '' ) {	
 							//Time is TBA. Stick it in and we're done
-							$row_string .=  $row_td . $time_is_tba . '</td>';
+							$row_string .=  '<td class="col-lg-3 col-md-3 gameInfo ' . $row_class . '"><span>Kickoff</span>' . $time_is_tba . '</td>';
 						}
 						else {	
 							//Time is not TBA. Build the time string from the unix timestamp
 							$unix_dtg = get_post_meta( $post->ID, '_mstw_gs_unix_dtg', true );
 							$time_str = date( $time_format, $unix_dtg );
 							//$row_string .=  $row_td . $unix_dtg . '</td>';
-							$row_string .=  $row_td . $time_str . '</td>';
+							$row_string .=  '<td class="col-lg-3 col-md-3 gameInfo ' . $row_class . '"><span>Kickoff</span>' . $time_str . '</td>';
 						}	
 					}
 				}
@@ -662,7 +663,7 @@ function mstw_gs_delete_plugin_options() {
 				// column 4: create the location entry
 				if ( $show_location ) {
 					$location_entry = mstw_gs_build_location_entry( $post, $args );
-					$row_string =  $row_string . $row_td . $location_entry . '</td>';
+					$row_string =  $row_string . '<td class="col-lg-2 col-md-2 locationInfo ' . $row_class . '">' . $location_entry . '</td>';
 				}
 				
 				
@@ -902,7 +903,9 @@ function mstw_gs_delete_plugin_options() {
 					else {	
 						$map_url = mstw_gs_build_google_map_url( $location_name, $location_street, $location_city, $location_state, $location_zip );
 					}
-					$venue_name = "<a href='$map_url' target='_blank'>$location_name</a>";
+					//$venue_name = "<a href='$map_url' target='_blank'>$location_name</a>";
+					//build out a map link that will use a popup
+					$venue_name = "<a class='popup-gmaps' href='$map_url'>Map</a>";
 					break;
 				default: //no-link
 					$venue_name = $location_name;

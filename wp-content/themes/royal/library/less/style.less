@@ -1,14 +1,25 @@
 // Variables
 
-@primary: #5555;
-@dark: #404040;
-@darkest: #282828;
-@light: #fff;
-@link: #c1c923;
-@donate: #00aab5;
-@highlight: #F41C54;
+//purple
+@primary: #4a1b4f;
+//dark purple
+@darkPrimary: #321235;
+//main text
+@text: #dadada;
+//dark background
+@dark: #140915;
+//gold links
+@link: #af7d03;
 @radius: 5px;
-@baseFont: 18px;
+@baseFontSize: 14px;
+@baseFontFamily: 'Metrophobic', sans-serif;
+@headlineFontFamily: 'Alfa Slab One', cursive;
+@firstRadius: 5px 0 0 5px;
+@lastRadius: 0 5px 5px 0;
+@quoteSize: 48px;
+@headlineShadow: 2px 7px 0px rgba(74, 27, 79, 0.73);
+@minorShadow: 2px 6px 0px rgba(74, 27, 79, 0.73);
+@overlayIndex: 2000;
 
 /* Global Styles */
 
@@ -18,25 +29,62 @@ body {
   width: 100%;
 }
 
-.vert-text {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
+body {
+	font-family: @baseFontFamily;
+	font-size: @baseFontSize;
+	color: @text;
+	background: @dark;
+	letter-spacing: 1.5px;
 }
 
-.vert-text h1 {
-  padding: 0;
-  margin: 0;
-  font-size: 4.5em;
-  font-weight: 700;
+a {color: @link}
+a:hover {color:@dark}
+a:focus,
+a:active {outline:0;border:none}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: @headlineFontFamily;
+	letter-spacing: 2px;
+	
+}
+.shadowMajor {text-shadow: @headlineShadow;}
+.shadowMinor {text-shadow: @minorShadow}
+
+.vert-text {
+  text-align: center;
+  position:relative;
+  z-index: @overlayIndex;
+}
+
+
+.branding {
+	position:absolute;
+	z-index: @overlayIndex;
+	margin-top: 5px;
+}
+.branding a {
+	display:inline-block;
+	width: 100%;
+	cursor:pointer;
+}
+.branding a:hover {text-decoration:none}
+.branding h3 {
+	color: @text;
+	font-size: 24px;
+	margin: 0 0 5px 0;
+	text-shadow: none;
+}
+
+.branding h3.tagline {
+	margin-top: 15px;
 }
 
 /* Side Menu */
 
 #sidebar-wrapper {
-  margin-right: -250px;
+  margin-right: -280px;
   right: 0;
-  width: 250px;
+  width: 280px;
   background: #000;
   position: fixed;
   height: 100%;
@@ -47,12 +95,13 @@ body {
   -ms-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
+  z-index: 2002;
 }
 
 .sidebar-nav {
   position: absolute;
   top: 0;
-  width: 250px;
+  width: 280px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -96,15 +145,15 @@ body {
 }
 
 #menu-toggle {
-  top: 0;
-  right: 0;
+  top: 5px;
+  right: 18px;
   position: fixed;
-  z-index: 1;
+  z-index: 2001;
 }
 
 #sidebar-wrapper.active {
-  right: 250px;
-  width: 250px;
+  right: 280px;
+  width: 280px;
   -webkit-transition: all 0.4s ease 0s;
   -moz-transition: all 0.4s ease 0s;
   -ms-transition: all 0.4s ease 0s;
@@ -113,14 +162,52 @@ body {
 }
 
 .toggle {
-  margin: 5px 5px 0 0;
+  margin: 5px 18px 0 0;
 }
+
+// ************  Buttons ************
+
+.btn {margin-bottom: 15px;}
+.btn-default {
+	background-color: @text;
+	color: @primary;
+	border:none;
+}
+
+.btn-primary {
+	background: @link;
+	color: @text;
+	padding: 5px 12px;
+	border: none;
+	
+}
+.btn-primary:hover {
+	color: @primary;
+	background: @text;
+}
+.btn-primary:active,
+.btn-primary:focus {
+	color: @primary;
+	background-color: @text;
+	border:none;
+	outline: 0;
+}
+
+#menu-toggle.btn-primary {
+	background: @text;
+	color: @link;
+}
+#menu-toggle.btn-primary:hover {
+	background: @text;
+	color: @primary;
+}
+
 
 /* Full Page Image Header Area */
 
 .header {
-  display: table;
   height: 100%;
+  min-height: 767px;
   width: 100%;
   position: relative;
   background: url(../images/bg.jpg) no-repeat center center fixed; 
@@ -130,19 +217,98 @@ body {
   background-size: cover;
 }
 
+.overlay {
+	height: 100%;
+	background: rgba(20,9,21,.8);
+	width: 100%;
+	position:absolute;
+	z-index: 10;
+}
+
+section {position:relative;z-index: @overlayIndex}
+
+.wrapper {padding-top: 200px;}
+
+// **************Featured Articles ****************
+
+.featuredArticle {margin-top: 50px;}
+
+
+
+.featuredHeadline {
+	line-height: 52px;
+	display:inline-block;
+	padding: 5px 0 5px 15px;
+	width: 100%;
+}
+.featuredHeadline h2 {
+	background: @primary;
+	display:inline;
+	color: @text;
+	padding: 1px 0; 
+	box-shadow: -16px 0 0 @primary;
+}
+.featuredHeadline h2 span {
+	position:relative;
+	left: -9px;
+}
+
+.secondaryfeaturedArticle {
+	margin-top: 180px;
+}
+
+
+// ************************* Championships ***************
+
+#championships {
+	background: rgba(18,5,19,.74);
+	width: 100%;
+	position:relative;
+	z-index: @overlayIndex;
+	margin-top: 70px;
+	display:table;
+}
+
+#championships span {color: #381c3b;padding: 10px 0 7px 0}
+
+#championships span.date {
+	font-size: 36px;
+	font-family: @headlineFontFamily;
+	display: inline-block;
+	line-height: 33px;
+	text-align:center;
+	display:table-cell;
+	
+}
+
+#championships span.date em {display:block;font-style:normal}
+
+#championships span.trophy {
+	text-align:center;
+	font-size: 24px;
+	font-family: @headlineFontFamily;
+	display:table-cell;
+	vertical-align: middle;
+	padding: 0 5px;
+	line-height: 24px;
+}
+
+
 /* Intro */
 
-.intro {
-  padding: 50px 0;
+.quote {
+  margin: 100px 0;
+}
+.quote h1 {
+	font-size: @quoteSize;
+	font-family: @headlineFontFamily;
+	color: @link;
+	
 }
 
-/* Services */
 
-.services {
-  background: #7fbbda;
-  padding: 50px 0;
-  color: #ffffff;
-}
+.section {padding: 50px 0;}
+.section h2 {margin-bottom: 50px;}
 
 .service-item {
   margin-bottom: 15px;
@@ -207,6 +373,25 @@ i.service-icon {
   height: 500px;
 }
 
+.mfp-image-holder .mfp-close, .mfp-iframe-holder .mfp-close {
+	background: @text;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	color: @link;
+	-moz-opacity: 1;
+	-webkit-opacity: 1;
+	opacity: 1;
+	right: -20px;
+	top: -20px;
+	z-index: @overlayIndex;
+	width: 42px;
+	font-weight: 900;
+}
+.mfp-image-holder .mfp-close:hover, .mfp-iframe-holder .mfp-close:hover {
+	color: @primary;
+}
+
 /* Footer */
 
 footer {
@@ -229,12 +414,136 @@ i.scroll {
 i.scroll:hover {
   color: #0a5175;
 }
+
+
+// ************* Schedule Overrids ***************
+
+.mstw-gs-table {
+	font-size: 24px;
+	font-family: @headlineFontFamily;
+	width: 100%;
+	
+}
+
+.mstw-gs-table tr {
+	-moz-border-radius: @radius;
+	-webkit-border-radius: @radius;
+	border-radius: @radius;
+}
+
+.mstw-gs-table tr.mstw-gs-away,
+.mstw-gs-table td.mstw-gs-away {
+	color: @link;
+}
+
+.mstw-gs-table tr.mstw-gs-home,
+.mstw-gs-table td.mstw-gs-home  {
+	color: @primary;
+}
+
+
+.mstw-gs-home tr, .mstw-gs-home td {font-weight: normal}
+
+.mstw-gs-odd tr, 
+.mstw-gs-odd td,
+.mstw-gs-even tr,
+.mstw-gs-even td {
+	border:none;
+	padding: 10px 6px !important;
+}
+
+.mstw-gs-table .mstw-gs-odd td, 
+.mstw-gs-table .mstw-gs-even td {
+}
+
+
+.mstw-gs-odd .mstw-gs-away,
+.mstw-gs-even .mstw-gs-away {
+	background: @primary;
+	color: @text;
+	border: none;
+}
+
+.mstw-gs-odd .mstw-gs-home,
+.mstw-gs-even .mstw-gs-home {
+	background: @link;
+	color: @text;
+	border: none;
+}
+
+.mstw-gs-odd.mstw-gs-home td a,
+.mstw-gs-even.mstw-gs-home td a {
+	color: @primary;
+	text-decoration: none;
+	font-weight: normal;
+}
+.mstw-gs-odd.mstw-gs-home td a:hover,
+.mstw-gs-even.mstw-gs-home td a:hover {
+	color: @dark;
+}
+
+.mstw-gs-odd.mstw-gs-away td a,
+.mstw-gs-even.mstw-gs-away td a {
+	color: @link;
+	text-decoration: none;
+}
+.mstw-gs-odd.mstw-gs-away td a:hover,
+.mstw-gs-even.mstw-gs-away td a:hover {
+	color: @dark;
+}
+
+
+
+
+.mstw-gs-table tr.mstw-gs-odd,
+.mstw-gs-table tr.mstw-gs-even {
+	margin-bottom:20px;
+}
+
+.mstw-gs-table td:first-child {border-radius: @firstRadius}
+.mstw-gs-table td:last-child {border-radius: @lastRadius}
+
+
+
+// **************** Scheduling ***********
+.monthDisplay,
+.dayDisplay {
+	display:block;
+	text-align: center;
+	
+}
+
+.mstw-gs-table .gameInfo span,
+.mstw-gs-table .teamName .homeTeam,
+.mstw-gs-table .teamName .atTeam {
+	display:block;
+}
+
+.mstw-gs-table .teamName {padding: 6px 15px;}
+.mstw-gs-table .teamName .atTeam {
+	margin-left: 40px;
+}
+
+.mstw-gs-table .teamName .atTeam em {margin-right: 5px;}
+
+
+
+
 /* Responsive */
+
+@media (min-width: 1200px) {
+	table.mstw-gs-table td[class*="col-"], table.mstw-gs-table th[class*="col-"] {float:left;}
+	.mstw-gs-table tr.mstw-gs-home, .mstw-gs-table td.mstw-gs-home  {color: @primary;background:@link}
+	.mstw-gs-table tr.mstw-gs-away, .mstw-gs-table td.mstw-gs-away { color: @link; background: @primary;}
+
+
+}
+
 
 @media (max-width: 768px) {
 	
   .header {
-	background: url(../images/bg.jpg) no-repeat center center scroll; 
+	 min-height: 967px; 
   }
 
   .callout {
@@ -244,5 +553,19 @@ i.scroll:hover {
   .map {
 	height: 75%;
   }
+  
+  .mstw-gs-table {font-size: 16px;width: 96%;margin: 0 2%;}
 
+}
+
+@media (max-width: 767px) {
+	.header .col-xs-6 {width: 100%}
+	.header .secondaryfeaturedArticle {margin-top: 60px;}
+	.quote h1 {padding: 0 30px;font-size: 32px;}
+}
+
+@media (max-width: 620px) {
+	.featuredHeadline {line-height: 44px;}
+	.featuredHeadline h2 {font-size: 24px;}
+	
 }

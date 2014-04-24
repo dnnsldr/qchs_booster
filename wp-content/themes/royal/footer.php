@@ -1,3 +1,6 @@
+    <?php if(!is_page_template('page-welcome.php')) { ?>
+    </div><!-- end of wrapper -->
+    <?php } ?>
     <!-- Footer -->
     <footer>
         <div class="container">

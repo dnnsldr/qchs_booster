@@ -34,11 +34,12 @@ define('DB_CHARSET', 'utf8');
 define('DB_COLLATE', '');
 
 //define the Home URLs
-define('WP_SITEURL', 'http://localhost:8888/qchs_booster');
-define('WP_HOME', 'http://localhost:8888/qchs_booster');
+define('WP_SITEURL', 'http://localhost.sites/qchs_booster');
+define('WP_HOME', 'http://localhost.sites/qchs_booster');
 
 //remove the revisions from post editor
 define('WP_POST_REVISIONS', false );
+
 
 
 /**#@+
@@ -85,11 +86,19 @@ define('WPLANG', '');
  * It is strongly recommended that plugin and theme developers use WP_DEBUG
  * in their development environments.
  */
-//define('WP_DEBUG', true);
+/*define('WP_DEBUG', true);*/
 define( 'WP_CACHE', false );
 define('WP_DEBUG_LOG', true);
 define('WP_DEBUG_DISPLAY', true);
 define('SAVEQUERIES', true);
+
+/*Define the Multisite*/
+define('MULTISITE', true);
+define('SUBDOMAIN_INSTALL', false);
+define('DOMAIN_CURRENT_SITE', 'localhost.sites');
+define('PATH_CURRENT_SITE', '/qchs_booster/');
+define('SITE_ID_CURRENT_SITE', 1);
+define('BLOG_ID_CURRENT_SITE', 1);
 
 
 /* That's all, stop editing! Happy blogging. */

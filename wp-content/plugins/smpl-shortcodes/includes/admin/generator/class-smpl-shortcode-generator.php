@@ -16,11 +16,9 @@ class Smpl_Shortcode_Generator {
 
 		// Only use wp_ajax if user is logged in
 		add_action( 'wp_ajax_smpl_check_url_action', array( $this, 'ajax_action_check_url' ) );
-
 		// @todo - In the future, create new generator that gets used under
 		// HTML Tab only for the pros that hate WYSIWYG!
 		// add_action('admin_print_footer_scripts', array( $this, 'add_toolbar_button' ), 100 );
-
 	}
 
 	/**
@@ -59,7 +57,7 @@ class Smpl_Shortcode_Generator {
 	 * @since 1.0.0
 	 */
 	function filter_mce_buttons( $buttons ) {
-		array_push( $buttons, '|', 'smpl_shortcodes_button' );
+		array_push( $buttons, 'smpl_shortcodes_button' );
 		return $buttons;
 	}
 
@@ -69,7 +67,12 @@ class Smpl_Shortcode_Generator {
 	 * @since 1.0.0
 	 */
 	function filter_mce_external_plugins( $plugins ) {
-        $plugins['SmplShortcodes'] = SMPL_SHORTCODES_PLUGIN_URI . '/includes/admin/generator/editor_plugin.php';
+		global $wp_version;
+		if ($wp_version >= 3.9) {
+    	    $plugins['SmplShortcodes'] = SMPL_SHORTCODES_PLUGIN_URI . '/includes/admin/generator/editor_plugin_mce_v4.php';
+		} else {
+    	    $plugins['SmplShortcodes'] = SMPL_SHORTCODES_PLUGIN_URI . '/includes/admin/generator/editor_plugin_mce_v3.php';
+		}
         return $plugins;
 	}
 

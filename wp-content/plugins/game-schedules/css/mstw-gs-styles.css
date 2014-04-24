@@ -209,8 +209,8 @@
 /******************************************************/
 
 .mstw-gs-table {
-    border-collapse: collapse!important;
-    border-spacing: 0px;
+    border-collapse: separate !important;
+    border-spacing: 0px 20px;
 }
 
 /* Set the table header attributes */
@@ -278,6 +278,7 @@
 .mstw-gs-home td a,  .mstw-gs-home td a:visited, .mstw-gs-home td a:active {
     font-weight: bold!important;
 	text-decoration: underline;
+	
 }
 
 .mstw-gs-home td a:hover {

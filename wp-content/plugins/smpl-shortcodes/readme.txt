@@ -3,8 +3,8 @@ Contributors: simplethemes
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=orders%40simplethemes%2ecom&item_name=smpl%20shortcodes&item_number=Support%20Open%20Source&no_shipping=0&no_note=1&tax=0&currency_code=USD&lc=US&bn=PP%2dDonationsBF&charset=UTF%2d8
 Tags: shortcodes, columns, notifications, buttons, skeleton, editor, callout, youtube, vimeo
 Requires at least: 3.0.1
-Tested up to: 3.8
-Stable tag: 1.0.7
+Tested up to: 3.9
+Stable tag: 1.0.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -30,14 +30,31 @@ This plugin works with any theme, but was made specifically to work with themes 
 
 == Changelog ==
 
-= 1.0 =
-* Initial Release
+= 1.0.8 =
+* Updated for TinyMCE 4.x
+* Updated for WordPress 3.9
+* Added compatibility layer
+
+= 1.0.7 =
+* Minor bug fixes
+
+= 1.0.6 =
+* Minor bug fixes
+
+= 1.0.5 =
+* Minor bug fixes
+
+= 1.0.4 =
+* JS improvements
+
+= 1.0.3 =
+* Fixed callout shortcode modal
+
+= 1.0.2 =
+* Fixed blockquote shortcode
 
 = 1.0.1 =
 * Added support for legacy shortcodes
 
-= 1.0.2 =
-* Fixed blockquotes shortcode
-
-= 1.0.3 =
-* Fixed callout shortcode modal
+= 1.0 =
+* Initial Release

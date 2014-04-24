@@ -4,6 +4,9 @@
 	margin: -2px -15px 10px -15px;
 	padding: 10px;
 }
+.mce-ico.mce-i-smpl-shortcodes {
+	background: url(../images/smpl-icon.png);
+}
 #smpl-options-buttons h3 {
 	color: #ffffff;
 	margin: 5px 10px;

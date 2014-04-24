@@ -27,11 +27,10 @@
 	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 	<!-- Fonts -->
 	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-	<link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-	<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-	<!-- Custom Theme CSS -->
-	<!--<link href="<?php //echo get_template_directory_uri();?>/style.css" rel="stylesheet">-->
-	<!-- using LESS -->
+	<link href="http://fonts.googleapis.com/css?family=Metrophobic" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet" type="text/css">
+	<!-- Magnific Popup core CSS file -->
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/library/css/magnific-popup.css"> 	<!-- using LESS -->
 	<link rel="stylesheet/less" type="text/css" href="<?php echo get_template_directory_uri(); ?>/library/less/style.less" />
 	<!--[if lt IE 9]>
 		<script src="<?php echo get_template_directory_uri(); ?>/library/js/html5.js"></script>
@@ -40,24 +39,40 @@
 </head>
 
 <body <?php body_class(); ?>>
-
+		
+		
     <!-- Side Menu -->
     <a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle"><i class="fa fa-bars"></i></a>
     <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
             <a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-            <li class="sidebar-brand"><a href="http://startbootstrap.com">Start Bootstrap</a>
+            <li class="sidebar-brand"><a href="<?php home_url(); ?>">Bulldog Football</a>
             </li>
-            <li><a href="#top">Home</a>
+            <li><a href="<?php home_url(); ?>#season">Varsity Schedule</a>
             </li>
-            <li><a href="#about">About</a>
+            <li><a href="<?php home_url(); ?>#roster">Varsity Roster</a>
             </li>
-            <li><a href="#services">Services</a>
+            <li><a href="<?php home_url(); ?>#services">Junior Varsity</a>
             </li>
-            <li><a href="#portfolio">Portfolio</a>
+            <li><a href="<?php home_url(); ?>#portfolio">Freshmen</a>
             </li>
-            <li><a href="#contact">Contact</a>
+            <li><a href="<?php home_url(); ?>#contact">Coaches</a>
             </li>
         </ul>
     </div>
     <!-- /Side Menu -->
+   	
+   	<!-- add our logo -->
+    <div class="branding col-lg-4 col-md-6 col-xs-8">
+				<a href="#">
+					<img class="col-lg-6 col-md-6 col-xs-6" src="<?php echo get_template_directory_uri(); ?>/library/images/bulldog-logo.png" alt="Queen Creek High School Football"/>
+					<h3 class="tagline">Queen Creek</h3>
+					<h3>High School</h3>
+				</a>
+			</div><!-- /.branding -->
+    	<div class="clearfix"></div>
+    	 
+    	<?php if(!is_page_template('page-welcome.php')) { ?>
+    	<div class="wrapper">
+    	<?php } ?>
+     

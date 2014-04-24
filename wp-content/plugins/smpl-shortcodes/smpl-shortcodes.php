@@ -2,7 +2,7 @@
 /*
 Plugin Name: Simple Shortcodes
 Description: This plugin works in conjuction with the SMPL framework to create shortcodes for many of the framework's internal elements.
-Version: 1.0.7
+Version: 1.0.8
 Author: simplethemes
 Author URI: http://www.simplethemes.com
 License: GPL2
@@ -25,7 +25,7 @@ License: GPL2
 
 */
 
-define( 'SMPL_SHORTCODES_PLUGIN_VERSION', '1.0.0' );
+define( 'SMPL_SHORTCODES_PLUGIN_VERSION', '1.0.8' );
 define( 'SMPL_SHORTCODES_PLUGIN_DIR', dirname( __FILE__ ) );
 define( 'SMPL_SHORTCODES_PLUGIN_URI', plugins_url( '' , __FILE__ ) );
 

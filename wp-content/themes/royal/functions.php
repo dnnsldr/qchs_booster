@@ -21,7 +21,7 @@ function dte_load_javascript_files() {
 	//wp_register_script('mapsScript', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false', array('jquery'),'1.0', true);
 	//wp_register_script('hashScript', get_template_directory_uri().'/library/js/hashchange.1.3.js', array('jquery'), '1.3', true);
 	//wp_register_script('ajaxScript', get_template_directory_uri().'/library/js/ajax.js', array('jquery'), '1.0', true);
-	//wp_register_script('MagnificScript', get_template_directory_uri().'/library/js/jquery.magnific-popup.min.js', array('jquery'), '0.9.9', true);
+	wp_register_script('MagnificScript', get_template_directory_uri().'/library/js/jquery.magnific-popup.min.js', array('jquery'), '0.9.9', true);
 	wp_register_script('customScript', get_template_directory_uri().'/library/js/custom.js', array('jquery'), '1.0', true);
 	
 	wp_enqueue_script('lessScript');
@@ -31,7 +31,7 @@ function dte_load_javascript_files() {
 	//wp_enqueue_script('mapsScript');
 	//wp_enqueue_script('hashScript');
 	//wp_enqueue_script('ajaxScript');
-	//wp_enqueue_script('MagnificScript');
+	wp_enqueue_script('MagnificScript');
 	wp_enqueue_script('customScript');
 }
 
@@ -224,15 +224,59 @@ add_filter('admin_footer_text', 'modify_footer_admin');
 function youruniqueprefix_filter_gettext( $translated, $original, $domain ) {
     // This is an array of original strings
     // and what they should be replaced with
-    $strings = array(
+    
+    $blog_id = get_current_blog_id();
+    
+    if ( is_network_admin() ) {
+    	$strings = array(
+        	'WordPress' => 'Talon OS',
+        	'Dashboard' => 'QCHS Network Dashboard',
+        	'Posts' => 'Articles',
+        	'All Posts' => 'All Articles',
+        	'Add New Post' => 'Add New Article',
+        	'WordPress Updates' => 'Talon OS Updates',
+        	// Add some more strings here
+    	);
+    }
+    
+    //see if this is the main site 
+    if ($blog_id == 1) {
+    	$strings = array(
+        	'WordPress' => 'Talon OS',
+        	'Dashboard' => 'QCHS Varsity Dashboard',
+        	'Posts' => 'Articles',
+        	'All Posts' => 'All Articles',
+        	'Add New Post' => 'Add New Article',
+        	'WordPress Updates' => 'Talon OS Updates',
+        	// Add some more strings here
+    	);
+    }
+    
+    //see if we are on the jv site
+    if ($blog_id == 2) {
+    	$strings = array(
         'WordPress' => 'Talon OS',
-        'Dashboard' => 'QCHS Dashboard',
+        'Dashboard' => 'QCHS JV Dashboard',
         'Posts' => 'Articles',
         'All Posts' => 'All Articles',
         'Add New Post' => 'Add New Article',
         'WordPress Updates' => 'Talon OS Updates',
         // Add some more strings here
-    );
+    	);
+    }
+    
+    //see if we are on the freshman site
+    if ($blog_id == 3) {
+    	$strings = array(
+        'WordPress' => 'Talon OS',
+        'Dashboard' => 'QCHS Freshman Dashboard',
+        'Posts' => 'Articles',
+        'All Posts' => 'All Articles',
+        'Add New Post' => 'Add New Article',
+        'WordPress Updates' => 'Talon OS Updates',
+        // Add some more strings here
+    	);
+    }
     // See if the current string is in the $strings array
     // If so, replace it's translation
     if ( isset( $strings[$original] ) ) {
