@@ -545,30 +545,30 @@ function mstw_gs_delete_plugin_options() {
 		if ( $posts ) {
 			// Make table of posts
 			// Start with the table header
-			$output .= '<table class="mstw-gs-table">'; 
+			$output .= '<table class="mstw-gs-table footable" data-page-size="30">'; 
 			
 			//dte removing the table header
-			/*$output .= "<thead class='mstw-gs-table-head mstw-gs-table-head_" . $scheds[0] . "'><tr>";
+			$output .= "<thead class='mstw-gs-table-head mstw-gs-table-head_" . $scheds[0] . "'><tr>";
 			if( $show_date ) { 
-				$output .= '<th>'. $date_label . '</th>';
+				$output .= '<th class="mstw-tr-table-head col-lg-1 col-md-1" style="display:none">'. $date_label . '</th>';
 			}
 			
-			$output .= '<th>'. $opponent_label . '</th>';
+			$output .= '<th class="mstw-tr-table-head col-lg-6 col-md-6" style="display:none">'. $opponent_label . '</th>';
 			
 			if( $show_location ) {
-				$output .= '<th>'. $location_label . '</th>';
+				$output .= '<th class="mstw-tr-table-head col-lg-3 col-md-3" style="display:none">'. $location_label . '</th>';
 			}
 			
 			if( $show_time ) {
-				$output .= '<th>'. $time_label . '</th>';
+				$output .= '<th class="mstw-tr-table-head col-lg-2 col-md-2" style="display:none">'. $time_label . '</th>';
 			}
 			
 			if ( $show_media > 0 ) { 
-				$output .= '<th>'.  $media_label . '</th>';
+				$output .= '<th class="mstw-tr-table-head">'.  $media_label . '</th>';
 			}
 			
 			$output .= '</tr></thead>';
-			*/
+			
 			   
 			// Keeps track of even and odd rows. Start with row 1 = odd.
 			$even_and_odd = array('even', 'odd');
@@ -588,7 +588,7 @@ function mstw_gs_delete_plugin_options() {
 				} else {
 					$row_class .= ' mstw-gs-away';
 				}
-				$row_tr = '<tr class="col-lg-12 ' . $row_class . '">';
+				$row_tr = '<tr class="col-lg-12 col-nd-12 ' . $row_class . '">';
 				$row_td = '<td class="' . $row_class . '">'; 
 				
 				// create the row
@@ -636,10 +636,10 @@ function mstw_gs_delete_plugin_options() {
 				if ( $show_time ) {
 					// $time_entry = mstw_gs_build_time_entry( $post );
 					
-					// If there is a game result, stick it in and we're done
+					// If there is a game result, stick it in along with the final score
 					$game_result = get_post_meta( $post->ID, '_mstw_gs_game_result', true); 
 					if ( $game_result != '' ) {
-						$row_string .=  '<td class="col-lg-3 col-md-3 gameInfo ' . $row_class . '">' . $game_result . '</td>';
+						$row_string .=  '<td class="col-lg-3 col-md-3 gameInfo ' . $row_class . '" data-hide="phone">' . $game_result . '</td>';
 					}
 					else {	
 					// There's no game result, so add a game time
@@ -648,14 +648,14 @@ function mstw_gs_delete_plugin_options() {
 						
 						if ( $time_is_tba != '' ) {	
 							//Time is TBA. Stick it in and we're done
-							$row_string .=  '<td class="col-lg-3 col-md-3 gameInfo ' . $row_class . '"><span>Kickoff</span>' . $time_is_tba . '</td>';
+							$row_string .=  '<td class="col-lg-3 col-md-3 gameInfo ' . $row_class . '" data-hide-"phone"><span>Kickoff</span>' . $time_is_tba . '</td>';
 						}
 						else {	
 							//Time is not TBA. Build the time string from the unix timestamp
 							$unix_dtg = get_post_meta( $post->ID, '_mstw_gs_unix_dtg', true );
 							$time_str = date( $time_format, $unix_dtg );
 							//$row_string .=  $row_td . $unix_dtg . '</td>';
-							$row_string .=  '<td class="col-lg-3 col-md-3 gameInfo ' . $row_class . '"><span>Kickoff</span>' . $time_str . '</td>';
+							$row_string .=  '<td class="col-lg-3 col-md-3 gameInfo ' . $row_class . '" data-hide="phone"><span>Kickoff</span>' . $time_str . '</td>';
 						}	
 					}
 				}
@@ -663,7 +663,7 @@ function mstw_gs_delete_plugin_options() {
 				// column 4: create the location entry
 				if ( $show_location ) {
 					$location_entry = mstw_gs_build_location_entry( $post, $args );
-					$row_string =  $row_string . '<td class="col-lg-2 col-md-2 locationInfo ' . $row_class . '">' . $location_entry . '</td>';
+					$row_string =  $row_string . '<td class="col-lg-2 col-md-2 locationInfo ' . $row_class . '" data-hide="phone">' . $location_entry . '</td>';
 				}
 				
 				

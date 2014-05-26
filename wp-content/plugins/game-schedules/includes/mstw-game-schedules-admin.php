@@ -559,7 +559,10 @@
 		$mstw_gs_location = get_post_meta( $post->ID, '_mstw_gs_location', true );
 		$mstw_gs_location_link = get_post_meta( $post->ID, '_mstw_gs_location_link', true );
 		$mstw_gs_home_game = get_post_meta( $post->ID, '_mstw_gs_home_game', true );
+		
 		$mstw_gs_game_result = get_post_meta( $post->ID, '_mstw_gs_game_result', true );
+		
+		$mstw_gs_game_score = get_post_meta( $post->ID, '_mstw_gs_game_score', true );
 		 
 		
 		$mstw_gs_media_label_1  = get_post_meta( $post->ID, '_mstw_gs_media_label_1', true );
@@ -744,8 +747,19 @@
 									'label' =>  __( 'Game Result:', 'mstw-loc-domain' ),
 									'maxlength' => 128,
 									'size' => 30,
-									'notes' => __( 'If a result is entered here, it will replace the game time in all front end displays.', 'mstw-loc-domain' ),
+									'notes' => __( 'Enter "W" or "L". This will replace the Game Time.', 'mstw-loc-domain' ),
 								),
+								
+								//adding in the score
+								'mstw_gs_game_score' => array (
+									'type' => 'text',
+									'value' => $mstw_gs_game_score,
+									'label' =>  __( 'Final Score:', 'mstw-loc-domain' ),
+									'maxlength' => 128,
+									'size' => 30,
+									'notes' => __( 'Enter Final Score such as "27 - 0", Home Team Score first.', 'mstw-loc-domain' ),
+								),
+								
 								'mstw_gs_media_label_1' => array (
 									'type' => 'text',
 									'value' => $mstw_gs_media_label_1,
@@ -933,6 +947,9 @@
 				
 				$mstw_gs_game_result = mstw_gs_safe_ref( $_POST, 'mstw_gs_game_result' );
 				update_post_meta( $post_id, '_mstw_gs_game_result', sanitize_text_field( $mstw_gs_game_result ) );
+				
+				$mstw_gs_game_score = mstw_gs_safe_ref( $_POST, 'mstw_gs_game_score' );
+				update_post_meta( $post_id, '_mstw_gs_game_score', sanitize_text_field( $mstw_gs_game_score ) );
 		
 				$mstw_gs_media_label_1 = mstw_gs_safe_ref( $_POST, 'mstw_gs_media_label_1' );
 				update_post_meta( $post_id, '_mstw_gs_media_label_1', sanitize_text_field( $mstw_gs_media_label_1 ) );
@@ -1093,6 +1110,19 @@ add_filter( 'manage_edit-scheduled_games_columns', 'mstw_gs_edit_games_columns' 
 					_e( 'No Game Result', 'mstw-loc-domain' );
 				else
 					printf( '%s', $mstw_gs_game_result );
+
+				break;
+				
+			
+			//If displaying the 'score' column
+			case 'game_score' :
+				// Get the post meta
+				$mstw_gs_game_scroe = get_post_meta( $post_id, '_mstw_gs_game_score', true );
+
+				if ( empty( $mstw_gs_game_scpre ) )
+					_e( 'No Scores', 'mstw-loc-domain' );
+				else
+					printf( '%s', $mstw_gs_game_score );
 
 				break;
 				

@@ -284,7 +284,7 @@ that class's MIT license & copyright (2008) from Kazuyoshi Tlacaelel.
 				  );
 				  
 		$args = array( 
-			'hierarchical' 			=> false, 
+			'hierarchical' 			=> true, 
 			'labels' 				=> $labels, 
 			'show_ui'				=> true,
 			'show_admin_column'		=> true,
@@ -390,20 +390,20 @@ function mstw_tr_register_post_type( ) {
 							),
 		/* Labels used when displaying the posts. */
 		'labels' => array(
-			'name'               => __( 'Players', 'mstw-loc-domain' ),
-			'singular_name'      => __( 'Player', 'mstw-loc-domain' ),
-			'menu_name'          => __( 'Team Rosters', 'mstw-loc-domain' ),
-			'all_items'			 => __( 'All Players', 'mstw-loc-domain' ),
-			'name_admin_bar'     => __( 'Players', 'mstw-loc-domain' ),
-			'add_new'            => __( 'Add New Player', 'mstw-loc-domain' ),
-			'add_new_item'       => __( 'Add New Player', 'mstw-loc-domain' ),
-			'edit_item'          => __( 'Edit Player', 'mstw-loc-domain' ),
-			'new_item'           => __( 'New Player', 'mstw-loc-domain' ),
-			'view_item'          => __( 'View Player', 'mstw-loc-domain' ),
-			'search_items'       => __( 'Search Players', 'mstw-loc-domain' ),
-			'not_found'          => __( 'No player found', 'mstw-loc-domain' ),
-			'not_found_in_trash' => __( 'No player found in trash', 'mstw-loc-domain' ),
-			'all_items'          => __( 'All Players', 'mstw-loc-domain' ),
+			'name'               	=> __( 'Players', 'mstw-loc-domain' ),
+			'singular_name'      	=> __( 'Player', 'mstw-loc-domain' ),
+			'menu_name'          	=> __( 'Team Rosters', 'mstw-loc-domain' ),
+			'all_items'			 			=> __( 'All Players', 'mstw-loc-domain' ),
+			'name_admin_bar'     	=> __( 'Players', 'mstw-loc-domain' ),
+			'add_new'            	=> __( 'Add New Player', 'mstw-loc-domain' ),
+			'add_new_item'       	=> __( 'Add New Player', 'mstw-loc-domain' ),
+			'edit_item'          	=> __( 'Edit Player', 'mstw-loc-domain' ),
+			'new_item'           	=> __( 'New Player', 'mstw-loc-domain' ),
+			'view_item'          	=> __( 'View Player', 'mstw-loc-domain' ),
+			'search_items'       	=> __( 'Search Players', 'mstw-loc-domain' ),
+			'not_found'          	=> __( 'No player found', 'mstw-loc-domain' ),
+			'not_found_in_trash' 	=> __( 'No player found in trash', 'mstw-loc-domain' ),
+			'all_items'          	=> __( 'All Players', 'mstw-loc-domain' ),
 			),
 		'taxonomies' => array( 'teams' ),
 		
@@ -416,7 +416,7 @@ function mstw_tr_register_post_type( ) {
 		//'can_export'          => true,
 		//'delete_with_user'    => false,
 		//'hierarchical'        => false,
-		//'has_archive'         => 'players',
+		'has_archive'         => 'players',
 	);
 
 	/* Register the player item post type. */
@@ -588,7 +588,8 @@ function mstw_tr_build_roster( $attribs ) {
 							  'teams' => $team, 
 							  'orderby' => $order_by, 
 							  'meta_key' => $sort_key,
-							  'order' => 'ASC' 
+							  'order' => 'ASC' ,
+							  //'posts_per_page' => 20
 							));						
 	
     if( $posts ) {
@@ -596,28 +597,31 @@ function mstw_tr_build_roster( $attribs ) {
 		// Start with the table header
 
 		$team_class = 'mstw-tr-table-' . $team;
-        $output .= '<table class="mstw-tr-table ' . $team_class . '">';
+        $output .= '<table class="mstw-tr-table mstw-gs-table footable ' . $team_class . '" data-page-size="20">';
 		
 		// leave this open and check on styles from the admin settings
 		$output .= '<thead><tr class="mstw-tr-table-head">';
 	
-		$th_temp = '<th class="mstw-tr-table-head" > ';
+		$th_temp = '<th class="mstw-tr-table-head col-1-lg col-1-md col-12-xs">';
 		
 		// Check the PHOTO Column
 		if ( $show_photos ) {
 			$output .= $th_temp . $photo_label . '</th>';
 		}
 		
-		if ( $show_number ) {	
-			$output .= $th_temp . $number_label . '</th>';
-		}
+		
 		
 		// Always show the NAME column
-		$output .= $th_temp . $name_label . '</th>';
+		$output .= '<th class="mstw-tr-table-head col-6-lg col-6-md col-12-xs">' . $name_label . '</th>';
+		
+		//show the number
+		if ( $show_number ) {	
+			$output .= '<th class="mstw-tr-table-head col-1-lg col-1-md col-12-xs" data-hide="phone">' . $number_label . '</th>';
+		}
 		
 		// POSITION column
 		if ( $show_position ) {
-			$output .= $th_temp . $position_label . '</th>';
+			$output .= '<th class="mstw-tr-table-head col-1-lg col-1-md col-12-xs" data-hide="phone">' . $position_label . '</th>';
 		}
 		
 		// BATS/THROWS column
@@ -627,17 +631,17 @@ function mstw_tr_build_roster( $attribs ) {
 		
 		// HEIGHT column
 		if ( $show_height ) {
-			$output .= $th_temp . $height_label . '</th>';
+			$output .= '<th class="mstw-tr-table-head col-1-lg col-1-md col-12-xs" data-hide="phone">' . $height_label . '</th>';
 		}
 		
 		// WEIGHT column
 		if ( $show_weight ) {
-			$output .= $th_temp . $weight_label . '</th>';
+			$output .= '<th class="mstw-tr-table-head col-1-lg col-1-md col-12-xs" data-hide="phone">' . $weight_label . '</th>';
 		}
 		
 		// YEAR column
 		if ( $show_year ) {
-			$output .= $th_temp . $year_label . '</th>';
+			$output .= '<th class="mstw-tr-table-head col-1-lg col-1-md col-12-xs" data-hide="phone">' . $year_label . '</th>';
 		}
 		
 		// AGE column
@@ -697,7 +701,7 @@ function mstw_tr_build_roster( $attribs ) {
 			$row_class = 'mstw-tr-' . $even_or_odd_row;
 			
 			$row_tr = '<tr class="' . $row_class . '">'; 
-			$row_td = '<td class="' . $row_class . '">'; 
+			$row_td = '<td class="col-1-lg col-1-md col-12-xs ' . $row_class . '" data-hide="phone">'; 
 			
 			// create the row
 			$row_string = $row_tr;	
@@ -726,12 +730,9 @@ function mstw_tr_build_roster( $attribs ) {
 				}
 			}
 			
-			// column 1: Add the player's number
-			if ( $show_number ) {
-				$row_string .= $row_td . get_post_meta( $post->ID, '_mstw_tr_number', true ) . '</td>';
-			}
 			
-			// column 2: Add the player's name
+			
+			// column 1: Add the player's name
 			switch( $name_format ) {
 			case 'first-last':
 				$player_name = get_post_meta( $post->ID, '_mstw_tr_first_name', true ) . " " . 
@@ -764,7 +765,12 @@ function mstw_tr_build_roster( $attribs ) {
 				$player_html = $player_name;
 			}
 			
-			$row_string =  $row_string . $row_td . $player_html . '</td>';
+			$row_string =  $row_string . '<td class="col-6-lg col-6-md col-12-xs ' . $row_class . '">' . $player_html . '</td>';
+			
+			// column 2: Add the player's number
+			if ( $show_number ) {
+				$row_string .= $row_td . get_post_meta( $post->ID, '_mstw_tr_number', true ) . '</td>';
+			}
 			
 			// column 3: Add the player's postition
 			if ( $show_position ) {
@@ -840,6 +846,8 @@ function mstw_tr_build_roster( $attribs ) {
 		} // end of foreach post or end of table content
 		
 		$output = $output . '</table>';
+		
+		//$output = $output . ' '.wp_pagenavi().'';
 	}
 	else { // No posts were found
 	

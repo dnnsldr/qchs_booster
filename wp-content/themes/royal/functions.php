@@ -7,6 +7,106 @@
  * Layout Hooks:
  *
  */
+ 
+
+add_action( 'after_setup_theme', 'royal_setup' );
+function royal_setup() {
+	add_editor_style();
+
+	add_theme_support( 'automatic-feed-links' );
+	add_theme_support( 'post-thumbnails' );
+
+  set_post_thumbnail_size( 150, 150 );
+	// 150px square
+	add_image_size( $name = 'squared150', $width = 150, $height = 150, $crop = true );
+	// 250px square
+	add_image_size( $name = 'squared250', $width = 250, $height = 250, $crop = true );
+	// 4:3 Video
+	add_image_size( $name = 'video43', $width = 320, $height = 240, $crop = true );
+	// 16:9 Video
+	add_image_size( $name = 'video169', $width = 320, $height = 180, $crop = true );
+
+	register_nav_menus( array(
+		'primary' => __( 'Primary Navigation' ),
+		'footer'	=> __( 'Footer Navigation' )
+	));
+
+}
+
+/*-----------------------------------------------------------------------------------*/
+// Sets the post excerpt length to 40 characters.
+// To override this length in a child theme, remove the filter and add your own
+// function tied to the excerpt_length filter hook.
+/*-----------------------------------------------------------------------------------*/
+
+
+if ( !function_exists( 'skeleton_excerpt_length' ) ) {
+	function skeleton_excerpt_length( $length ) {
+		return 40;
+	}
+	add_filter( 'excerpt_length', 'skeleton_excerpt_length' );
+}
+
+/*-----------------------------------------------------------------------------------*/
+// Returns a "Continue Reading" link for excerpts
+/*-----------------------------------------------------------------------------------*/
+
+if ( !function_exists( 'skeleton_continue_reading_link' ) ) {
+	function skeleton_continue_reading_link() {
+		return ' <a href="'. get_permalink() . '">' . __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'smpl' ) . '</a>';
+	}
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+// Replaces "[...]" (appended to automatically generated excerpts) with an ellipsis
+// and skeleton_continue_reading_link().
+//
+// To override this in a child theme, remove the filter and add your own
+// function tied to the excerpt_more filter hook.
+/*-----------------------------------------------------------------------------------*/
+
+if ( !function_exists( 'skeleton_auto_excerpt_more' ) ) {
+	function skeleton_auto_excerpt_more( $more ) {
+		return ' &hellip;' . skeleton_continue_reading_link();
+	}
+	add_filter( 'excerpt_more', 'skeleton_auto_excerpt_more' );
+}
+
+/*-----------------------------------------------------------------------------------*/
+// Adds a pretty "Continue Reading" link to custom post excerpts.
+/*-----------------------------------------------------------------------------------*/
+
+
+if ( !function_exists( 'skeleton_custom_excerpt_more' ) ) {
+	function skeleton_custom_excerpt_more( $output ) {
+		if ( has_excerpt() && ! is_attachment() ) {
+			$output .= skeleton_continue_reading_link();
+		}
+		return $output;
+	}
+	add_filter( 'get_the_excerpt', 'skeleton_custom_excerpt_more' );
+}
+
+/*-----------------------------------------------------------------------------------*/
+// Removes the page jump when read more is clicked through
+/*-----------------------------------------------------------------------------------*/
+
+
+if ( !function_exists( 'remove_more_jump_link' ) ) {
+	function remove_more_jump_link($link) {
+		$offset = strpos($link, '#more-');
+		if ($offset) {
+		$end = strpos($link, '"',$offset);
+		}
+		if ($end) {
+		$link = substr_replace($link, '', $offset, $end-$offset);
+		}
+		return $link;
+	}
+	add_filter('the_content_more_link', 'remove_more_jump_link');
+}
+
 
 /*-----------------------------------------------------------------------------------*/
 // Add Scripts
@@ -34,6 +134,126 @@ function dte_load_javascript_files() {
 	wp_enqueue_script('MagnificScript');
 	wp_enqueue_script('customScript');
 }
+
+
+if ( ! function_exists( 'twentytwelve_comment' ) ) :
+/**
+ * Template for comments and pingbacks.
+ *
+ * To override this walker in a child theme without modifying the comments template
+ * simply create your own twentytwelve_comment(), and that function will be used instead.
+ *
+ * Used as a callback by wp_list_comments() for displaying the comments.
+ *
+ * @since Twenty Twelve 1.0
+ *
+ * @return void
+ */
+function twentytwelve_comment( $comment, $args, $depth ) {
+	$GLOBALS['comment'] = $comment;
+	switch ( $comment->comment_type ) :
+		case 'pingback' :
+		case 'trackback' :
+		// Display trackbacks differently than normal comments.
+	?>
+	<li <?php comment_class(); ?> id="comment-<?php comment_ID(); ?>">
+		<p><?php _e( 'Pingback:', 'twentytwelve' ); ?> <?php comment_author_link(); ?> <?php edit_comment_link( __( '(Edit)', 'twentytwelve' ), '<span class="edit-link">', '</span>' ); ?></p>
+	<?php
+			break;
+		default :
+		// Proceed with normal comments.
+		global $post;
+	?>
+	<li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
+		<article id="comment-<?php comment_ID(); ?>" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<?php
+					echo get_avatar( $comment, 44 );
+					printf( '<cite><b class="fn">%1$s</b> %2$s</cite>',
+						get_comment_author_link(),
+						// If current post author is also comment author, make it known visually.
+						( $comment->user_id === $post->post_author ) ? '<span>' . __( 'Post author', 'twentytwelve' ) . '</span>' : ''
+					);
+					printf( '<a href="%1$s"><time datetime="%2$s">%3$s</time></a>',
+						esc_url( get_comment_link( $comment->comment_ID ) ),
+						get_comment_time( 'c' ),
+						/* translators: 1: date, 2: time */
+						sprintf( __( '%1$s at %2$s', 'twentytwelve' ), get_comment_date(), get_comment_time() )
+					);
+				?>
+			</header><!-- .comment-meta -->
+
+			<?php if ( '0' == $comment->comment_approved ) : ?>
+				<p class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'twentytwelve' ); ?></p>
+			<?php endif; ?>
+
+			<section class="comment-content comment">
+				<?php comment_text(); ?>
+				<?php edit_comment_link( __( 'Edit', 'twentytwelve' ), '<p class="edit-link">', '</p>' ); ?>
+			</section><!-- .comment-content -->
+
+			<div class="reply">
+				<?php comment_reply_link( array_merge( $args, array( 'reply_text' => __( 'Reply', 'twentytwelve' ), 'after' => ' <span>&darr;</span>', 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
+			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+	<?php
+		break;
+	endswitch; // end comment_type check
+}
+endif;
+
+if ( ! function_exists( 'dte_entry_meta' ) ) :
+/**
+ * Set up post entry meta.
+ *
+ * Prints HTML with meta information for current post: categories, tags, permalink, author, and date.
+ *
+ * Create your own twentytwelve_entry_meta() to override in a child theme.
+ *
+ * @since Twenty Twelve 1.0
+ *
+ * @return void
+ */
+function dte_entry_meta() {
+	// Translators: used between list items, there is a space after the comma.
+	$categories_list = get_the_category_list( __( ', ', 'twentytwelve' ) );
+
+	// Translators: used between list items, there is a space after the comma.
+	$tag_list = get_the_tag_list( '', __( ', ', 'twentytwelve' ) );
+
+	$date = sprintf( '<a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date" datetime="%3$s">%4$s</time></a>',
+		esc_url( get_permalink() ),
+		esc_attr( get_the_time() ),
+		esc_attr( get_the_date( 'c' ) ),
+		esc_html( get_the_date() )
+	);
+
+	//$author = sprintf( '<span class="author vcard"><a class="url fn n" href="%1$s" title="%2$s" rel="author">%3$s</a></span>',
+	//	esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
+	//	esc_attr( sprintf( __( 'View all posts by %s', 'twentytwelve' ), get_the_author() ) ),
+	//	get_the_author()
+	//);
+	/*$commentsLink = sprintf( '<div class="comments-link"><?php comments_popup_link( "<span class="leave-reply">' . __( 'Leave a reply', 'twentytwelve' ) . '</span>', __( '1 Reply', 'twentytwelve' ), __( '% Replies', 'twentytwelve' ) ); ?></div><!-- .comments-link --><?php endif; // comments_open() ?>' );*/
+	
+
+	// Translators: 1 is category, 2 is tag, 3 is the date and 4 is the author's name.
+	if ( $tag_list ) {
+		$utility_text = __( 'This entry was posted in %1$s and tagged %2$s on %3$s.', 'twentytwelve' );
+	} elseif ( $categories_list ) {
+		$utility_text = __( 'This entry was posted in %1$s on %3$s.', 'twentytwelve' );
+	} else {
+		$utility_text = __( 'This entry was posted on %3$s.', 'twentytwelve' );
+	}
+
+	printf(
+		$utility_text,
+		$categories_list,
+		$tag_list,
+		$date
+		//$author
+	);
+}
+endif;
 
 
 

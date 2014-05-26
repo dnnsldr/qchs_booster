@@ -2,14 +2,19 @@
 
 //purple
 @primary: #4a1b4f;
+
 //dark purple
 @darkPrimary: #321235;
+
 //main text
 @text: #dadada;
+
 //dark background
 @dark: #140915;
+
 //gold links
 @link: #af7d03;
+
 @radius: 5px;
 @baseFontSize: 14px;
 @baseFontFamily: 'Metrophobic', sans-serif;
@@ -38,15 +43,30 @@ body {
 }
 
 a {color: @link}
-a:hover {color:@dark}
+a:hover {color:@link;border-bottom: 1px dotted @link;text-decoration:none}
 a:focus,
 a:active {outline:0;border:none}
+
+.branding a,
+#sidebar-wrapper a {text-decoration: none;border-bottom: none;}
+
+*::-moz-selection {
+	background: @link;
+	color: @text;
+}
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: @headlineFontFamily;
 	letter-spacing: 2px;
 	
 }
+
+
+
+.alignleft {float: left;margin: 0 15px 10px 0}
+.alignright {float: right;margin: 0 0 10px 15px;}
+.icon-left {margin: 0 3px 0 0;}
+.icon-right {margin: 0 0 0 3px;}
 .shadowMajor {text-shadow: @headlineShadow;}
 .shadowMinor {text-shadow: @minorShadow}
 
@@ -78,6 +98,7 @@ h1, h2, h3, h4, h5, h6 {
 .branding h3.tagline {
 	margin-top: 15px;
 }
+.branding h3.small {font-size: 16px;display:inline-block;}
 
 /* Side Menu */
 
@@ -146,7 +167,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #menu-toggle {
   top: 5px;
-  right: 18px;
+  right: 5px;
   position: fixed;
   z-index: 2001;
 }
@@ -227,7 +248,7 @@ h1, h2, h3, h4, h5, h6 {
 
 section {position:relative;z-index: @overlayIndex}
 
-.wrapper {padding-top: 200px;}
+.wrapper {padding-top: 120px;}
 
 // **************Featured Articles ****************
 
@@ -392,10 +413,37 @@ i.service-icon {
 	color: @primary;
 }
 
+
+
+
+/* POSTS and PAGES */
+
+.entry-meta {margin-bottom: 35px;}
+.comments-link {text-align:right;}
+article {margin-bottom: 50px;}
+.nav-single {margin-bottom: 50px;}
+
+.comment-form-comment label {display:block}
+#commentform textarea {width: 96%;max-width: 96%;min-width: 96%}
+#commentform .form-allowed-tags {display:none}
+#commentform input#submit {margin-top: 15px;}
+#commentform label {display:block;font-weight: normal}
+
+#commentform .comment-form-author,
+#commentform .comment-form-email {
+	margin-bottom: 20px;
+}
+
+#commentform .comment-form-author input,
+#commentform .comment-form-email input {
+	display:block;
+	margin-top: 7px;
+}
+
 /* Footer */
 
 footer {
-  padding: 100px 0;
+  margin: 80px 0 0;
 }
 
 .top-scroll {
@@ -425,6 +473,8 @@ i.scroll:hover {
 	
 }
 
+table.mstw-tr-table {border-bottom: none !important;}
+
 .mstw-gs-table tr {
 	-moz-border-radius: @radius;
 	-webkit-border-radius: @radius;
@@ -442,7 +492,7 @@ i.scroll:hover {
 }
 
 
-.mstw-gs-home tr, .mstw-gs-home td {font-weight: normal}
+#season .mstw-gs-home tr, #season .mstw-gs-home td {font-weight: normal}
 
 .mstw-gs-odd tr, 
 .mstw-gs-odd td,
@@ -526,13 +576,26 @@ i.scroll:hover {
 
 .mstw-gs-table .teamName .atTeam em {margin-right: 5px;}
 
+.mstw-gs-table tr.mstw-tr-odd {color: @text;background-color: transparent;}
+.mstw-gs-table tr.mstw-tr-odd td, 
+.mstw-gs-table tr.mstw-tr-even td {
+	border:none;
+}
 
+// ***************** Table Pagination **********
+.footable .pagination.pagination-centered {width: 100%}
+.footable .pagination.pagination-centered li {display:inline;margin: 0 5px;font-size: 12px;}
+.footable .pagination.pagination-centered li a {background: @text;border-radius: 50%;color: @dark;display:inline-block;height: 22px;width: 22px;line-height: 22px;text-align:center}
+.footable .pagination.pagination-centered li a:hover {background:@text;color: @link;text-decoration:none}
+.footable .pagination.pagination-centered li.active a{color: @dark;background: @link;text-decoration:none}
 
+.mstw-tr-table .footable-row-detail-name {font-weight: normal}
 
 /* Responsive */
 
 @media (min-width: 1200px) {
 	table.mstw-gs-table td[class*="col-"], table.mstw-gs-table th[class*="col-"] {float:left;}
+	table.mstw-tr-table.mstw-gs-table td[class*="col-"], table.mstw-tr-table.mstw-gs-table th[class*="col-"] {float:none;}
 	.mstw-gs-table tr.mstw-gs-home, .mstw-gs-table td.mstw-gs-home  {color: @primary;background:@link}
 	.mstw-gs-table tr.mstw-gs-away, .mstw-gs-table td.mstw-gs-away { color: @link; background: @primary;}
 
@@ -555,6 +618,7 @@ i.scroll:hover {
   }
   
   .mstw-gs-table {font-size: 16px;width: 96%;margin: 0 2%;}
+  
 
 }
 
@@ -562,6 +626,9 @@ i.scroll:hover {
 	.header .col-xs-6 {width: 100%}
 	.header .secondaryfeaturedArticle {margin-top: 60px;}
 	.quote h1 {padding: 0 30px;font-size: 32px;}
+	.mstw-gs-table.footable {width: 96%}
+	
+	.secondaryfeaturedArticle a.btn-primary {margin-right: 15px;}
 }
 
 @media (max-width: 620px) {

@@ -32,8 +32,8 @@ get_header();
    						<div class="featuredHeadline clearfix">
    							<h2><span>It's Our Year</span></h2>
    						</div>
-   						<a class="btn btn-primary clearfix" href="<?php home_url(); ?>/#season">Check out the Schedule <i class="icon-right fa  fa-chevron-right"></i><i class="fa  fa-chevron-right"></i></a>
-   						<a class="btn btn-primary clearfix" href="<?php home_url(); ?>/#roster">View the Players <i class="icon-right fa  fa-chevron-right"></i><i class="fa  fa-chevron-right"></i></a>
+   						<a class="btn btn-primary clearfix" href="<?php echo home_url(); ?>/#season">Check out the Schedule <i class="icon-right fa  fa-chevron-right"></i><i class="fa  fa-chevron-right"></i></a>
+   						<a class="btn btn-primary clearfix" href="<?php echo home_url(); ?>/#roster">View the Players <i class="icon-right fa  fa-chevron-right"></i><i class="fa  fa-chevron-right"></i></a>
           	</article>
           </section>
         
@@ -90,87 +90,32 @@ get_header();
     </div>
     <!-- /Services -->
 
-    <!-- Callout -->
-    <div class="callout">
-        <div class="vert-text">
-            <h1 class="shadowMajor">A Dramatic Text Area</h1>
+    <!-- Callout  Quote-->
+    <div class="quote">
+        <div class="container">
+        	<div class="row">
+        		<div class="col-lg-8 col-md-8 col-xs-12 col-md-offset-2 col-lg-offset-2 text-center">
+        			<h1 class="shadowMajor">Another Really Cool Quote Goes Here</h1>
+        		</div>
+        	</div>
         </div>
     </div>
     <!-- /Callout -->
 
-    <!-- Portfolio -->
-    <div id="roster" class="portfolio">
+    <!-- roster -->
+    <div id="roster" class="section">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 col-md-offset-4 text-center">
-                    <h2>Our Work</h2>
-                    <hr>
-                </div>
+                <h2 class="shadowMinor">2014 Varsity Team Roster</h2>
             </div>
             <div class="row">
-                <div class="col-md-4 col-md-offset-2 text-center">
-                    <div class="portfolio-item">
-                        <a href="#">
-                            <img class="img-portfolio img-responsive" src="img/portfolio-1.jpg">
-                        </a>
-                        <h4>Cityscape</h4>
-                    </div>
-                </div>
-                <div class="col-md-4 text-center">
-                    <div class="portfolio-item">
-                        <a href="#">
-                            <img class="img-portfolio img-responsive" src="img/portfolio-2.jpg">
-                        </a>
-                        <h4>Is That On Fire?</h4>
-                    </div>
-                </div>
+            	<?php echo do_shortcode('[mstw-tr-roster team="varsity" roster_type="custom" show_title="0" number_label="#"]'); ?>
             </div>
-            <div class="row">
-                <div class="col-md-4 col-md-offset-2 text-center">
-                    <div class="portfolio-item">
-                        <a href="#">
-                            <img class="img-portfolio img-responsive" src="img/portfolio-3.jpg">
-                        </a>
-                        <h4>Stop Sign</h4>
-                    </div>
-                </div>
-                <div class="col-md-4 text-center">
-                    <div class="portfolio-item">
-                        <a href="#">
-                            <img class="img-portfolio img-responsive" src="img/portfolio-4.jpg">
-                        </a>
-                        <h4>Narrow Focus</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </div><!-- /.container -->
     </div>
-    <!-- /Portfolio -->
+    <!-- /roster -->
 
-    <!-- Call to Action -->
-    <div class="call-to-action">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-md-offset-3 text-center">
-                    <h3>The buttons below are impossible to resist.</h3>
-                    <a href="#" class="btn btn-lg btn-default">Click Me!</a>
-                    <a href="#" class="btn btn-lg btn-primary">Look at Me!</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- /Call to Action -->
 
-    <!-- Map -->
-    <div id="contact" class="map">
-        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
-        <br />
-        <small>
-            <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
-        </small>
-        </iframe>
-    </div>
-    <!-- /Map -->
 
 <?php
 get_footer(); 

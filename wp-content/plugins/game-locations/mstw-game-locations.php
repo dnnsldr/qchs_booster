@@ -3,7 +3,7 @@
 Plugin Name: Game Locations
 Plugin URI: http://wordpress.org/extend/plugins/game-locations/
 Description: The Game Locations Plugin defines a custom type - Game Locations - for use in the MySportTeamWebite framework. Generations driving directions (from Google Maps) based on the address.
-Version: 1.2
+Version: 1.3
 Author: Mark O'Donnell
 Author URI: http://shoalsummitsolutions.com
 */
@@ -599,7 +599,9 @@ function mstw_gl_manage_columns( $column, $post_id ) {
 				
 				// column2: create the address in a pretty format
 				if ( $show_address ) {
-					$row_string .= $row_td . get_post_meta( $post->ID, '_mstw_gl_street', true ) . '<br/>' . 
+					$street = get_post_meta( $post->ID, '_mstw_gl_street', true );
+					$street_string = ( $street != '' ? $street . '<br/>' : '' );
+					$row_string .= $row_td . $street_string . 
 						get_post_meta( $post->ID, '_mstw_gl_city', true ) . ', ' .
 						get_post_meta( $post->ID, '_mstw_gl_state', true ) . '  ' . 
 						get_post_meta( $post->ID, '_mstw_gl_zip', true ) . '</td>';
@@ -744,7 +746,7 @@ function mstw_gl_option_page() {
 	<div class="wrap">
 		<?php screen_icon(); ?>
 		<h2>Game Locations Plugin Settings</h2>
-		<?php //settings_errors(); ?>
+		<?php settings_errors( 'mstw_game_locations' ); ?>
 		<form action="options.php" method="post">
 			<?php settings_fields('mstw_gl_options'); ?>
 			<?php do_settings_sections('mstw_gl_settings'); ?>
@@ -991,7 +993,7 @@ function mstw_gl_validate_options( $input ) {
 				// add the hex colors
 				case 'none_right_now':
 					// validate the color for proper hex format
-					$sanitized_color = mstw_utl_sanitize_hex_color( $input[$key] );
+					$sanitized_color = mstw_gl_sanitize_hex_color( $input[$key] );
 					
 					// decide what to do - save new setting 
 					// or display error & revert to last setting
@@ -1030,14 +1032,6 @@ function mstw_gl_validate_options( $input ) {
 	
 	return apply_filters( 'mstw_gl_validate_filters', $output, $input );
 }
-
-//--------------------------------------------------------------
-//	Display the admin notices
-//
-	function mstw_gl_admin_notices( ) {
-		settings_errors( );
-	}
-	add_action( 'admin_notices', 'mstw_gl_admin_notices' );
 
 //--------------------------------------------------------------
 // Get the default display options

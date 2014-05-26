@@ -5,7 +5,7 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-6 col-md-offset-3 text-center">
+                <div class="col-md-8 col-lg-8 col-lg-offset-2 col-md-offset-2 text-center">
                     <ul class="list-inline">
                         <li><i class="fa fa-facebook fa-3x"></i>
                         </li>
@@ -17,8 +17,7 @@
                     <div class="top-scroll">
                         <a href="#top"><i class="fa fa-circle-arrow-up scroll fa-4x"></i></a>
                     </div>
-                    <hr>
-                    <p>Copyright &copy; Company 2013</p>
+                    <p>Copyright &copy; 2014; Queen Creek High School Booster Club. All Rights Reserved.</p>
                 </div>
             </div>
         </div>

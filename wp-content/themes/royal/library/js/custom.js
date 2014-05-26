@@ -1,17 +1,31 @@
 jQuery(document).ready(function($){
-
-    $("#menu-close").click(function(e) {
+		
+		jQuery("#menu-toggle").click(function(e) {
         e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
+        jQuery("#sidebar-wrapper").toggleClass("active");
     });
-
-
-    $("#menu-toggle").click(function(e) {
+    
+    jQuery("#menu-close").click(function(e) {
         e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
+        jQuery("#sidebar-wrapper").toggleClass("active");
     });
+    
+    jQuery('#sidebar-wrapper .sidebar-nav li a').click(function(){
+    	jQuery("#sidebar-wrapper").toggleClass("active");
+    });
+    
+    //toggles for responsive tables
+    jQuery('.footable').footable({
+    	breakpoints: {
+        phone: 680,
+        tablet: 768
+    	}
+		});
+		
+		jQuery('input#submit').addClass('btn btn-primary');
 
-    $(function() {
+
+    jQuery(function() {
 			$('a[href*=#]:not([href=#])').click(function() {
       	if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
 					var target = $(this.hash);

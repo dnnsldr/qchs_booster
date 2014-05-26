@@ -48,15 +48,15 @@
             <a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
             <li class="sidebar-brand"><a href="<?php home_url(); ?>">Bulldog Football</a>
             </li>
-            <li><a href="<?php home_url(); ?>#season">Varsity Schedule</a>
+            <li><a href="<?php echo home_url(); ?>#season">Varsity Schedule</a>
             </li>
-            <li><a href="<?php home_url(); ?>#roster">Varsity Roster</a>
+            <li><a href="<?php echo home_url(); ?>#roster">Varsity Roster</a>
             </li>
-            <li><a href="<?php home_url(); ?>#services">Junior Varsity</a>
+            <li><a href="<?php echo home_url(); ?>#services">Junior Varsity</a>
             </li>
-            <li><a href="<?php home_url(); ?>#portfolio">Freshmen</a>
+            <li><a href="<?php echo home_url(); ?>#portfolio">Freshmen</a>
             </li>
-            <li><a href="<?php home_url(); ?>#contact">Coaches</a>
+            <li><a href="<?php echo home_url(); ?>#contact">Coaches</a>
             </li>
         </ul>
     </div>
@@ -64,10 +64,16 @@
    	
    	<!-- add our logo -->
     <div class="branding col-lg-4 col-md-6 col-xs-8">
-				<a href="#">
+				<a href="<?php echo home_url(); ?>">
+					<?php if(is_page_template('page-welcome.php')) { ?>
 					<img class="col-lg-6 col-md-6 col-xs-6" src="<?php echo get_template_directory_uri(); ?>/library/images/bulldog-logo.png" alt="Queen Creek High School Football"/>
 					<h3 class="tagline">Queen Creek</h3>
 					<h3>High School</h3>
+					<?php } else { ?>
+					<img class="col-lg-3 col-md-3 col-xs-3" src="<?php echo get_template_directory_uri(); ?>/library/images/bulldog-logo.png" alt="Queen Creek High School Football"/>
+					<h3 class="tagline small">Queen Creek</h3>
+					<h3 class="small">High School</h3>
+					<?php } ?>
 				</a>
 			</div><!-- /.branding -->
     	<div class="clearfix"></div>
