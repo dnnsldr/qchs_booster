@@ -16,8 +16,11 @@
 
 get_header(); ?>
 
-	<div id="primary" class="site-content">
-		<div id="content" role="main">
+	<div class="container">
+		
+		<div id="primary" class="site-content row">
+			
+			<div id="content" role="main" class="col-lg-9 col-md-9 col-xs-12">
 		<?php if ( have_posts() ) : ?>
 
 			<?php /* Start the Loop */ ?>
@@ -25,7 +28,7 @@ get_header(); ?>
 				<?php get_template_part( 'content', get_post_format() ); ?>
 			<?php endwhile; ?>
 
-			<?php twentytwelve_content_nav( 'nav-below' ); ?>
+			<?php //twentytwelve_content_nav( 'nav-below' ); ?>
 
 		<?php else : ?>
 
@@ -60,7 +63,11 @@ get_header(); ?>
 		<?php endif; // end have_posts() check ?>
 
 		</div><!-- #content -->
-	</div><!-- #primary -->
+		
+			<?php get_sidebar(); ?>
 
-<?php get_sidebar(); ?>
+		</div><!-- #primary -->
+
+
+	</div><!-- end of container -->
 <?php get_footer(); ?>

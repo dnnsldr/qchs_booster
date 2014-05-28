@@ -2,7 +2,11 @@
 /*Template Name: Homepage*/
 get_header();
 ?>
-	
+<style type="text/css">
+.header {
+	background: url('<?php echo get_option('custom_options_main_background_image'); ?>') no-repeat fixed center center / cover  rgba(0, 0, 0, 0);
+}
+</style>	
 	
     <!-- Full Page Image Header Area -->
    
@@ -42,25 +46,26 @@ get_header();
     	</div><!-- /.container -->
     	</div><!-- end of wrapper -->
     	<div class="clearfix"></div>
+    	<?php if( (!get_option('championship_options_first_championship_year')=='') && (!get_option('championship_options_second_championship_year')=='') && (!get_option('championship_options_third_championship_year')=='') ) : ?>
     	<div id="championships" class="clearfix">
     		<div class="container">
     			<div class="row">
     				<div class="col-lg-4 col-md-4 col-sm-4">
-    					<span class="date"><em>20</em>13</span>
-    					<span class="trophy vert-text">4th in State</span>
+    					<span class="date"><em>20</em><?php echo get_option('championship_options_first_championship_year'); ?></span>
+    					<span class="trophy vert-text"><?php echo get_option('championship_options_first_championship_description');?></span>
     				</div>
     				<div class="col-lg-4 col-md-4 col-sm-4">
-    					<span class="date"><em>20</em>12</span>
-    					<span class="trophy vert-text">State Champions</span>
+    					<span class="date"><em>20</em><?php echo get_option('championship_options_second_championship_year'); ?></span>
+    					<span class="trophy vert-text"><?php echo get_option('championship_options_second_championship_description');?></span>
     				</div>
     				<div class="col-lg-4 col-md-4 col-sm-4">
-    					<span class="date"><em>20</em>11</span>
-    					<span class="trophy vert-text">Semi Finals</span>
+    					<span class="date"><em>20</em><?php echo get_option('championship_options_third_championship_year'); ?></span>
+    					<span class="trophy vert-text"><?php echo get_option('championship_options_third_championship_description');?></span>
     				</div>
     			</div>
     		</div>
-    		
     	</div><!-- /#championships -->
+    	<?php endif; ?>
     </div><!-- /#top -->
     	<!-- /Full Page Image Header Area -->
 <div class="clearfix"></div>
@@ -69,8 +74,12 @@ get_header();
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-md-8 col-xs-12 col-md-offset-2 col-lg-offset-2 text-center">
+                <?php if ( get_option('custom_options_first_quote_after_homepage_image')=='' ) { ?>
                     <h1 class="pull-left shadowMajor">"PRIDE ... HONOR ... </h1>
                     <h1 class="pull-right shadowMajor">COMMITMENT</h1>
+                <?php } else { ?>
+                	<h1 class="shadowMajor"><?php echo get_option('custom_options_first_quote_after_homepage_image');?></h1>
+                <?php } ?>
                 </div>
             </div>
         </div>
@@ -95,7 +104,11 @@ get_header();
         <div class="container">
         	<div class="row">
         		<div class="col-lg-8 col-md-8 col-xs-12 col-md-offset-2 col-lg-offset-2 text-center">
-        			<h1 class="shadowMajor">Another Really Cool Quote Goes Here</h1>
+        			<?php if ( get_option('custom_options_second_quote')=='' ) { ?>
+        				<h1 class="shadowMajor">Bulldog Strong</h1>
+        			<?php } else { ?>
+        				<h1 class="shadowMajor"><?php echo get_option('custom_options_second_quote'); ?></h1>
+        			<?php } ?>
         		</div>
         	</div>
         </div>

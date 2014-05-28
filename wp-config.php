@@ -34,8 +34,8 @@ define('DB_CHARSET', 'utf8');
 define('DB_COLLATE', '');
 
 //define the Home URLs
-define('WP_SITEURL', 'http://localhost.sites/qchs_booster');
-define('WP_HOME', 'http://localhost.sites/qchs_booster');
+define('WP_SITEURL', 'http://localhost:8888/qchs_booster');
+define('WP_HOME', 'http://localhost:8888/qchs_booster');
 
 //remove the revisions from post editor
 define('WP_POST_REVISIONS', false );

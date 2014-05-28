@@ -19,13 +19,12 @@
 		<div class="entry-header">
 			<?php the_post_thumbnail(); ?>
 			<?php if ( is_single() ) : ?>
-			<?php edit_post_link( __( ' Edit This Post', 'twentytwelve' ), '<span class="edit-link"><i class="fa icon-left fa-pencil"></i>', '</span>' ); ?>
-			<h1 class="entry-title"><?php the_title(); ?></h1>
+				
+				<h1 class="entry-title"><?php the_title(); ?></h1>
 			<?php else : ?>
-			<?php edit_post_link( __( ' Edit This Post', 'twentytwelve' ), '<span class="edit-link">', '</span>' ); ?>
-			<h1 class="entry-title">
-				<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
-			</h1>
+				<h1 class="entry-title">
+					<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
+				</h1>
 			<?php endif; // is_single() ?>
 			
 			
@@ -41,11 +40,11 @@
 			<?php endif; // comments_open() ?>
 			
 			</div><!-- .entry-meta -->
-			
+			<?php edit_post_link( __( ' Edit This Post', 'twentytwelve' ), '<span class="edit-link"><i class="fa icon-left fa-pencil"></i>', '</span>' ); ?>
 			
 		</div><!-- .entry-header -->
 
-		<?php if ( is_search() ) : // Only display Excerpts for Search ?>
+		<?php if ( !is_single() ) : // Only display Excerpts for Search ?>
 		<div class="entry-summary">
 			<?php the_excerpt(); ?>
 		</div><!-- .entry-summary -->

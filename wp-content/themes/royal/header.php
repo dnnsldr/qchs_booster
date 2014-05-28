@@ -44,41 +44,28 @@
     <!-- Side Menu -->
     <a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle"><i class="fa fa-bars"></i></a>
     <div id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-            <li class="sidebar-brand"><a href="<?php home_url(); ?>">Bulldog Football</a>
-            </li>
-            <li><a href="<?php echo home_url(); ?>#season">Varsity Schedule</a>
-            </li>
-            <li><a href="<?php echo home_url(); ?>#roster">Varsity Roster</a>
-            </li>
-            <li><a href="<?php echo home_url(); ?>#services">Junior Varsity</a>
-            </li>
-            <li><a href="<?php echo home_url(); ?>#portfolio">Freshmen</a>
-            </li>
-            <li><a href="<?php echo home_url(); ?>#contact">Coaches</a>
-            </li>
-        </ul>
+         <?php if (function_exists(clean_custom_menus())) clean_custom_menus(); ?>
     </div>
     <!-- /Side Menu -->
    	
    	<!-- add our logo -->
-    <div class="branding col-lg-4 col-md-6 col-xs-8">
+    <div class="branding col-lg-6 col-md-6 col-xs-8">
 				<a href="<?php echo home_url(); ?>">
 					<?php if(is_page_template('page-welcome.php')) { ?>
-					<img class="col-lg-6 col-md-6 col-xs-6" src="<?php echo get_template_directory_uri(); ?>/library/images/bulldog-logo.png" alt="Queen Creek High School Football"/>
-					<h3 class="tagline">Queen Creek</h3>
-					<h3>High School</h3>
+					<img src="<?php echo get_template_directory_uri(); ?>/library/images/bulldog-logo.png" alt="Queen Creek High School Football"/>
+					</a>
+					<a href="<?php echo home_url(); ?>"><h3 class="tagline">Queen Creek</h3>
+					<h3>High School</h3></a>
 					<?php } else { ?>
-					<img class="col-lg-3 col-md-3 col-xs-3" src="<?php echo get_template_directory_uri(); ?>/library/images/bulldog-logo.png" alt="Queen Creek High School Football"/>
-					<h3 class="tagline small">Queen Creek</h3>
-					<h3 class="small">High School</h3>
+					<a href="<?php echo home_url(); ?>"><img class="" src="<?php echo get_template_directory_uri(); ?>/library/images/bulldog-logo.png" alt="Queen Creek High School Football"/></a>
+					<a href="<?php echo home_url(); ?>"><h3 class="tagline small">Queen Creek</h3>
+					<h3 class="small">High School</h3></a>
 					<?php } ?>
-				</a>
+				
 			</div><!-- /.branding -->
     	<div class="clearfix"></div>
     	 
     	<?php if(!is_page_template('page-welcome.php')) { ?>
-    	<div class="wrapper">
+    	<div class="wrapper clearfix">
     	<?php } ?>
      

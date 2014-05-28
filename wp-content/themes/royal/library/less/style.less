@@ -15,6 +15,8 @@
 //gold links
 @link: #af7d03;
 
+@hover : #FBBB19;
+
 @radius: 5px;
 @baseFontSize: 14px;
 @baseFontFamily: 'Metrophobic', sans-serif;
@@ -43,9 +45,40 @@ body {
 }
 
 a {color: @link}
-a:hover {color:@link;border-bottom: 1px dotted @link;text-decoration:none}
+
+a:hover {
+	color:@link;
+	text-decoration:none;
+	-webkit-opacity: .75;
+	-moz-opacity: .75;
+	opacity: .75
+}
+
 a:focus,
-a:active {outline:0;border:none}
+a:active {
+	outline:0;
+	border:none;
+	color: @link;
+}
+
+a.btn:hover,
+table a:hover, 
+a img:hover,
+.branding a,
+#sidebar-wrapper a {
+	text-decoration: none;
+	border-bottom: none;
+	-webkit-opacity: 1;
+	-moz-opacity: 1;
+	opacity: 1;
+}
+
+.featuredArticle a.btn:hover,
+.secondaryfeaturedArticle a.btn:hover {
+	-webkit-opacity: .75;
+	-moz-opacity: .75;
+	opacity: .75;
+}
 
 .branding a,
 #sidebar-wrapper a {text-decoration: none;border-bottom: none;}
@@ -84,8 +117,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 .branding a {
 	display:inline-block;
-	width: 100%;
 	cursor:pointer;
+	float:left;
 }
 .branding a:hover {text-decoration:none}
 .branding h3 {
@@ -98,7 +131,7 @@ h1, h2, h3, h4, h5, h6 {
 .branding h3.tagline {
 	margin-top: 15px;
 }
-.branding h3.small {font-size: 16px;display:inline-block;}
+.branding h3.small {font-size: 16px;}
 
 /* Side Menu */
 
@@ -248,7 +281,7 @@ h1, h2, h3, h4, h5, h6 {
 
 section {position:relative;z-index: @overlayIndex}
 
-.wrapper {padding-top: 120px;}
+.wrapper {padding-top: 150px;}
 
 // **************Featured Articles ****************
 
@@ -627,8 +660,14 @@ table.mstw-tr-table {border-bottom: none !important;}
 	.header .secondaryfeaturedArticle {margin-top: 60px;}
 	.quote h1 {padding: 0 30px;font-size: 32px;}
 	.mstw-gs-table.footable {width: 96%}
+	body.page-template-page-welcome-php .wrapper {padding-top: 160px;}
 	
 	.secondaryfeaturedArticle a.btn-primary {margin-right: 15px;}
+}
+
+@media (max-width: 680px) {
+	.branding h3 {font-size: 16px}
+	.branding img {width: 75%}
 }
 
 @media (max-width: 620px) {

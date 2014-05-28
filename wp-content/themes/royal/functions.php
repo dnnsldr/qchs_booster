@@ -33,6 +33,31 @@ function royal_setup() {
 
 }
 
+// custom menu example @ http://digwp.com/2011/11/html-formatting-custom-menus/
+function clean_custom_menus() {
+	$menu_name = 'primary'; // specify custom menu slug
+	if (($locations = get_nav_menu_locations()) && isset($locations[$menu_name])) {
+		$menu = wp_get_nav_menu_object($locations[$menu_name]);
+		$menu_items = wp_get_nav_menu_items($menu->term_id);
+
+		//$menu_list = '<nav>' ."\n";
+		$menu_list .= "\t\t\t\t". '<ul class="sidebar-nav">' ."\n";
+		$menu_list .= "\t\t\t\t". '<a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="fa fa-times"></i></a>' ."\n";
+		$menu_list .= "\t\t\t\t". '<li class="sidebar-brand"><a href="'.home_url().'">Bulldog Football</a></li>' ."\n";
+		foreach ((array) $menu_items as $key => $menu_item) {
+			$title = $menu_item->title;
+			$url = $menu_item->url;
+			$relationship = $menu_item->attr_title;
+			$menu_list .= "\t\t\t\t\t". '<li><a rel="'.$relationship.'" href="'. $url .'">'. $title .'</a></li>' ."\n";
+		}
+		$menu_list .= "\t\t\t\t". '</ul>' ."\n";
+		//$menu_list .= "\t\t\t". '</nav>' ."\n";
+	} else {
+		// $menu_list = '<!-- no list defined -->';
+	}
+	echo $menu_list;
+}
+
 /*-----------------------------------------------------------------------------------*/
 // Sets the post excerpt length to 40 characters.
 // To override this length in a child theme, remove the filter and add your own
@@ -445,22 +470,7 @@ function youruniqueprefix_filter_gettext( $translated, $original, $domain ) {
     // This is an array of original strings
     // and what they should be replaced with
     
-    $blog_id = get_current_blog_id();
-    
-    if ( is_network_admin() ) {
-    	$strings = array(
-        	'WordPress' => 'Talon OS',
-        	'Dashboard' => 'QCHS Network Dashboard',
-        	'Posts' => 'Articles',
-        	'All Posts' => 'All Articles',
-        	'Add New Post' => 'Add New Article',
-        	'WordPress Updates' => 'Talon OS Updates',
-        	// Add some more strings here
-    	);
-    }
-    
     //see if this is the main site 
-    if ($blog_id == 1) {
     	$strings = array(
         	'WordPress' => 'Talon OS',
         	'Dashboard' => 'QCHS Varsity Dashboard',
@@ -468,35 +478,9 @@ function youruniqueprefix_filter_gettext( $translated, $original, $domain ) {
         	'All Posts' => 'All Articles',
         	'Add New Post' => 'Add New Article',
         	'WordPress Updates' => 'Talon OS Updates',
+        	'Tea T.O.' => 'Options Panel'
         	// Add some more strings here
     	);
-    }
-    
-    //see if we are on the jv site
-    if ($blog_id == 2) {
-    	$strings = array(
-        'WordPress' => 'Talon OS',
-        'Dashboard' => 'QCHS JV Dashboard',
-        'Posts' => 'Articles',
-        'All Posts' => 'All Articles',
-        'Add New Post' => 'Add New Article',
-        'WordPress Updates' => 'Talon OS Updates',
-        // Add some more strings here
-    	);
-    }
-    
-    //see if we are on the freshman site
-    if ($blog_id == 3) {
-    	$strings = array(
-        'WordPress' => 'Talon OS',
-        'Dashboard' => 'QCHS Freshman Dashboard',
-        'Posts' => 'Articles',
-        'All Posts' => 'All Articles',
-        'Add New Post' => 'Add New Article',
-        'WordPress Updates' => 'Talon OS Updates',
-        // Add some more strings here
-    	);
-    }
     // See if the current string is in the $strings array
     // If so, replace it's translation
     if ( isset( $strings[$original] ) ) {
@@ -537,7 +521,7 @@ get_currentuserinfo();
 if ($user_login !== "bulldogGridion") {
 //create custom update message in admin
 	function dnnsldr_update_nag() {
-		if ( is_multisite() && !current_user_can('update_core') )
+		if ( !current_user_can('update_core') )
 		return false;
 
 		global $pagenow;
@@ -639,6 +623,30 @@ if ($user_login !== "bulldogGridion") {
   	return $actions;
 	}
 	add_filter('favorite_actions', 'custom_favorite_actions');
+	
+	//remove some of the tea to options panel
+	add_action('admin_head', 'my_options_panel');
+	function my_options_panel() {
+		echo '
+			<style type="text/css">
+				.wrap.tea_to ul.subsubsub li:first-child,
+				.wrap.tea_to ul.subsubsub li:nth-child(2),
+				.wrap.tea_to ul.subsubsub li:nth-child(3),
+				.wrap.tea_to ul.subsubsub li:last-child {
+					display:none
+				}
+				#toplevel_page_tea_theme_options .wp-submenu.wp-submenu-wrap li.wp-first-item,
+				#toplevel_page_tea_theme_options .wp-submenu.wp-submenu-wrap li:nth-child(3),
+				#toplevel_page_tea_theme_options .wp-submenu.wp-submenu-wrap li:nth-child(4),
+				#toplevel_page_tea_theme_options .wp-submenu.wp-submenu-wrap li:last-child {
+					display:none;
+				}
+				.wrap.tea_to #poststuff #postbox-container-1 {display:none}
+				#wp-admin-bar-root-default #wp-admin-bar-tea_theme_options {display:none}
+				form.upgrade[name="upgrade-plugins"] {display:none}
+			</style>';
+	}
+	//end of options panel
 }
 
 ?>
